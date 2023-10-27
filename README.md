@@ -1,28 +1,23 @@
-# 🏙 Tokyo Night
+# 🏯 Solarized Osaka
 
-A dark and light [Neovim](https://github.com/neovim/neovim) theme written in
-[Lua](https://www.lua.org) ported from the [Visual Studio Code
-TokyoNight](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
-[extra](#-extras) themes for [Kitty](https://sw.kovidgoyal.net/kitty/conf.html),
-[Alacritty](https://github.com/alacritty/alacritty),
-[iTerm](https://iterm2.com/) and
-[Fish](https://fishshell.com/docs/current/index.html).
+One of the [Solarized](https://ethanschoonover.com/solarized/)-inspired dark theme for [Neovim](https://github.com/neovim/neovim) written in [Lua](https://www.lua.org).
 
-## Storm
+![solarized-osaka_screenshot01](https://github.com/folke/tokyonight.nvim/assets/1332805/12d424f8-6967-482b-8357-124b06573f18)
 
-![image](https://user-images.githubusercontent.com/292349/115295095-3a9e5080-a10e-11eb-9aed-6054488c46ce.png)
+## 🎨 More Colors
 
-## Night
+Ethan Schoonover originally created the [Solarized](https://en.wikipedia.org/wiki/Solarized) color scheme in 2011, featuring a set of 16 colors.
+However, this assortment of colors falls short in providing adequate variations for additional signs, alerts, tooltips, and various other UI components made available by recent Neovim plugins.
+Furthermore, the text colors in the original theme are somewhat too dark when displayed on modern, vibrant monitors.
 
-![image](https://user-images.githubusercontent.com/292349/115295327-7afdce80-a10e-11eb-89b3-2591262bf95a.png)
+Solarized Osaka improves upon this by introducing additional colors, enriching the overall theme to ensure compatibility with newer plugins and enhancing visibility on contemporary monitors.
+The theme brightens the base colors slightly, creating a visually appealing and functional color palette.
 
-## Moon
+Here is what the improved color palette looks like:
 
-![image](https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png)
+![Color Palette](https://github.com/craftzdog/solarized-osaka.nvim/assets/1332805/e26b00bc-8331-4b42-abd6-706dce72bcf1)
 
-## Day
-
-![image](https://user-images.githubusercontent.com/292349/115996270-78c6c480-a593-11eb-8ed0-7d1400b058f5.png)
+[A Figma design is available here](https://www.figma.com/file/6Wp5Puqtz7hbMJgYqOOJzb/Solarized-Osaka?type=design&node-id=0%3A1&mode=design&t=vEaGptGFJOLAafmB-1).
 
 ## ✨ Features
 
@@ -31,33 +26,6 @@ TokyoNight](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
 - Enhances terminal colors.
 - Introduces a darker background option for sidebar-like windows.
 - Supports all major plugins.
-- Provides [TokyoNight](https://github.com/folke/tokyonight.nvim)
-  [extras](#-extras) for numerous other applications.
-
-### 🍭 Extras
-
-<!-- extras:start -->
-- [Alacritty](https://github.com/alacritty/alacritty) ([alacritty](extras/alacritty))
-- [Delta](https://github.com/dandavison/delta) ([delta](extras/delta))
-- [Dunst](https://dunst-project.org/) ([dunst](extras/dunst))
-- [Fish](https://fishshell.com/docs/current/index.html) ([fish](extras/fish))
-- [Fish Themes](https://fishshell.com/docs/current/interactive.html#syntax-highlighting) ([fish_themes](extras/fish_themes))
-- [Foot](https://codeberg.org/dnkl/foot) ([foot](extras/foot))
-- [GitUI](https://github.com/extrawurst/gitui) ([gitui](extras/gitui))
-- [iTerm](https://iterm2.com/) ([iterm](extras/iterm))
-- [Kitty](https://sw.kovidgoyal.net/kitty/conf.html) ([kitty](extras/kitty))
-- [Lua Table for testing](https://www.lua.org) ([lua](extras/lua))
-- [Prism](https://prismjs.com) ([prism](extras/prism))
-- [Sublime Text](https://www.sublimetext.com/docs/themes) ([sublime](extras/sublime))
-- [Terminator](https://gnome-terminator.readthedocs.io/en/latest/config.html) ([terminator](extras/terminator))
-- [Tilix](https://github.com/gnunn1/tilix) ([tilix](extras/tilix))
-- [Tmux](https://github.com/tmux/tmux/wiki) ([tmux](extras/tmux))
-- [WezTerm](https://wezfurlong.org/wezterm/config/files.html) ([wezterm](extras/wezterm))
-- [Windows Terminal](https://aka.ms/terminal-documentation) ([windows_terminal](extras/windows_terminal))
-- [Xfce Terminal](https://docs.xfce.org/apps/terminal/advanced) ([xfceterm](extras/xfceterm))
-- [Xresources](https://wiki.archlinux.org/title/X_resources) ([xresources](extras/xresources))
-- [Zathura](https://pwmt.org/projects/zathura/) ([zathura](extras/zathura))
-<!-- extras:end -->
 
 ## ⚡️ Requirements
 
@@ -71,7 +39,7 @@ Install the theme with your preferred package manager, such as
 
 ```lua
 {
-  "folke/tokyonight.nvim",
+  "craftzdog/solarized-osaka.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
@@ -83,73 +51,26 @@ Install the theme with your preferred package manager, such as
 ### Vim Script
 
 ```vim
-colorscheme tokyonight
-
-" There are also colorschemes for the different styles.
-colorscheme tokyonight-night
-colorscheme tokyonight-storm
-colorscheme tokyonight-day
-colorscheme tokyonight-moon
+colorscheme solarized-osaka
 ```
 
 ### [Lua](https://www.lua.org)
 
 ```lua
-vim.cmd[[colorscheme tokyonight]]
-```
-
-#### External Plugins
-
-##### [Barbecue](https://github.com/utilyre/barbecue.nvim)
-
-```lua
--- Lua
-require('barbecue').setup {
-  -- ... your barbecue config
-  theme = 'tokyonight',
-  -- ... your barbecue config
-}
-```
-
-##### [Lualine](https://github.com/nvim-lualine/lualine.nvim)
-
-```lua
--- Lua
-require('lualine').setup {
-  options = {
-    -- ... your lualine config
-    theme = 'tokyonight'
-    -- ... your lualine config
-  }
-}
-```
-
-##### [Lightline](https://github.com/itchyny/lightline.vim)
-
-```vim
-" Vim Script
-let g:lightline = {'colorscheme': 'tokyonight'}
+vim.cmd[[colorscheme solarized-osaka]]
 ```
 
 ## ⚙️ Configuration
 
-> ❗️ Set the configuration **BEFORE** loading the color scheme with `colorscheme tokyonight`.
+> ❗️ Set the configuration **BEFORE** loading the color scheme with `colorscheme solarized-osaka`.
 
-The theme offers four styles: [storm](#storm), [moon](#moon), [night](#night),
-and [day](#day).
-
-The [day](#day) style is used when `{ style = "day" }` is passed to
-`setup(options)` or when `vim.o.background = "light"`.
-
-[TokyoNight](https://github.com/folke/tokyonight.nvim) uses the default options,
+[Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim) uses the default options,
 unless `setup` is explicitly called.
 
 ```lua
-require("tokyonight").setup({
+require("solarized-osaka").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
-  style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-  light_style = "day", -- The theme is used when the background is set to light
   transparent = false, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
   styles = {
@@ -193,17 +114,12 @@ How the highlight groups are calculated:
    groups.
 
 For default values of `colors` and `highlights`, please consult the
-[storm](extras/lua/tokyonight_storm.lua),
-[moon](extras/lua/tokyonight_moon.lua),
-[night](extras/lua/tokyonight_night.lua), and
-[day](extras/lua/tokyonight_day.lua) themes.
+[colors.lua](lua/solarized-osaka/colors.lua) file.
 
 ### Settings and color alteration demonstration
 
 ```lua
-require("tokyonight").setup({
-  -- use the night style
-  style = "night",
+require("solarized-osaka").setup({
   -- disable italic for functions
   styles = {
     functions = {}
@@ -220,7 +136,7 @@ require("tokyonight").setup({
 ### [Borderless Telescope](https://github.com/nvim-telescope/telescope.nvim/wiki/Gallery#borderless) example
 
 ```lua
-require("tokyonight").setup({
+require("solarized-osaka").setup({
   on_highlights = function(hl, c)
     local prompt = "#2d3149"
     hl.TelescopeNormal = {
@@ -265,46 +181,3 @@ set -g default-terminal "${TERM}"
 set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'  # undercurl support
 set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{255}%&%d::%p1%{255}%&%d%;m'  # underscore colours - needs tmux-3.0
 ```
-
-## 🍭 Extras
-
-Extra color configs for [Kitty](https://sw.kovidgoyal.net/kitty/conf.html),
-[Alacritty](https://github.com/alacritty/alacritty),
-[Fish](https://www.lua.org/), [WezTerm](https://wezfurlong.org/wezterm/config/files.html),
-[iTerm](https://iterm2.com/) and [foot](https://codeberg.org/dnkl/foot) can be
-found in [extras](extras/). To use them, refer to their respective
-documentation.
-
-![image](https://user-images.githubusercontent.com/292349/115395546-d8d6f880-a198-11eb-98fb-a1194787701d.png)
-
-You can easily use the color palette for other plugins inside your
-[Neovim](https://github.com/neovim/neovim) configuration:
-
-```lua
-local colors = require("tokyonight.colors").setup() -- pass in any of the config options as explained above
-local util = require("tokyonight.util")
-
-aplugin.background = colors.bg_dark
-aplugin.my_error = util.lighten(colors.red1, 0.3) -- number between 0 and 1. 0 results in white, 1 results in red1
-```
-
-## 🔥 Contributing
-
-Pull requests are welcome.
-
-For the [extras](#-extras), we use a simple template system that can be used to
-generate themes for the different styles.
-
-How to add a new extra template:
-
-1. Create a file like `lua/tokyonight/extra/cool-app.lua`.
-2. Add the name and output file extension to the `extras` table in
-   `lua/tokyonight/extra/init.lua`.
-3. Run the following command to generate new [extra](#-extras) themes:
-
-   ```sh
-   nvim --headless "+lua require('tokyonight.extra').setup()" +qa
-   ```
-
-4. Check the newly created themes in the `extra/` directory. Please **DO NOT**
-   commit them, as they are already automatically built by the CI.
