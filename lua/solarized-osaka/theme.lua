@@ -808,7 +808,7 @@ function M.setup()
     theme.highlights.MiniStatuslineInactive = inactive
   end
 
-  -- options.on_highlights(theme.highlights, theme.colors)
+  options.on_highlights(theme.highlights, theme.colors)
 
   if config.is_day() then
     util.invert_colors(theme.colors)
