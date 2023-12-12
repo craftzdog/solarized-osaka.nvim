@@ -191,7 +191,7 @@ function M.setup()
 
     LspSignatureActiveParameter = { bg = c.base03, bold = true },
     LspCodeLens = { fg = c.base01 },
-    LspInlayHint = { bg = c.blue500, fg = c.base01 },
+    LspInlayHint = { bg = c.violet900, fg = c.violet500 },
 
     LspInfoBorder = { fg = c.base02, bg = c.bg_float },
 
