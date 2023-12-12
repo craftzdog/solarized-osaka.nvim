@@ -161,7 +161,7 @@ function M.setup()
     markdownH2 = { fg = c.violet500, bold = true },
     markdownLinkText = { fg = c.blue500, underline = true },
 
-    ["helpCommand"] = { fg = c.blue500, bg = c.base01 },
+    ["helpCommand"] = { fg = c.blue500, bg = c.blue900 },
 
     debugPC = { bg = c.bg_sidebar }, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { fg = c.blue300, bg = c.blue700 }, -- used for breakpoint colors in terminal-debug
@@ -347,7 +347,7 @@ function M.setup()
     NeogitBranch = { fg = c.magenta500 },
     NeogitRemote = { fg = c.violet500 },
     NeogitHunkHeader = { fg = c.base0, bg = c.base02 },
-    NeogitHunkHeaderHighlight = { fg = c.blue500, bg = c.base00 },
+    NeogitHunkHeaderHighlight = { fg = c.blue500, bg = c.base02 },
     NeogitDiffContextHighlight = { fg = c.base00, bg = c.base02 },
     NeogitDiffDeleteHighlight = { fg = c.red500, bg = c.red900 },
     NeogitDiffAddHighlight = { fg = c.green500, bg = c.green900 },
@@ -705,14 +705,14 @@ function M.setup()
     MiniStarterHeader = { fg = c.blue },
     MiniStarterInactive = { fg = c.base01, style = options.styles.comments },
     MiniStarterItem = { fg = c.fg, bg = options.transparent and c.none or c.bg },
-    MiniStarterItemBullet = { fg = c.base02 },
+    MiniStarterItemBullet = { fg = c.base01 },
     MiniStarterItemPrefix = { fg = c.warning },
     MiniStarterSection = { fg = c.violet500 },
     MiniStarterQuery = { fg = c.info },
 
     MiniStatuslineDevinfo = { fg = c.base01, bg = c.bg_highlight },
     MiniStatuslineFileinfo = { fg = c.base01, bg = c.bg_highlight },
-    MiniStatuslineFilename = { fg = c.base01, bg = c.base01 },
+    MiniStatuslineFilename = { fg = c.base01, bg = c.bg_highlight },
     MiniStatuslineInactive = { fg = c.blue, bg = c.bg_statusline },
     MiniStatuslineModeCommand = { fg = c.black, bg = c.yellow, bold = true },
     MiniStatuslineModeInsert = { fg = c.black, bg = c.green, bold = true },
