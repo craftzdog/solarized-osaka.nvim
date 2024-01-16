@@ -323,8 +323,8 @@ function M.setup()
 
     -- LspTrouble
     TroubleText = { fg = c.base0 },
-    TroubleCount = { fg = c.magenta500, bg = c.base00 },
-    TroubleNormal = { fg = c.base0, bg = c.base00 },
+    TroubleCount = { fg = c.magenta500 },
+    TroubleNormal = { fg = c.base0 },
 
     -- Illuminate
     illuminatedWord = { bg = c.violet900 },
