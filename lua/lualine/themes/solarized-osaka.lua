@@ -5,7 +5,7 @@ local solarized_osaka = {}
 
 solarized_osaka.normal = {
   a = { bg = colors.blue, fg = colors.black },
-  b = { bg = colors.fg, fg = colors.black },
+  b = { bg = colors.bg_statusline, fg = colors.fg },
   c = { bg = colors.bg_statusline, fg = colors.fg },
 }
 
