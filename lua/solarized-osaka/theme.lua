@@ -332,6 +332,7 @@ function M.setup()
     ["@keyword.return.javascript"] = { fg = "#768900", style = "italic" },
     ["@tag.delimiter.javascript"] = { fg = c.red500 },
     ["@tag.javascript"] = { fg = c.orange500 },
+    ["@variable.javascript"] = { fg = c.yellow500 },
 
     -- LSP Semantic Token Groups
     ["@lsp.type.boolean"] = { link = "@boolean" },
