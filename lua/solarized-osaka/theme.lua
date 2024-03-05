@@ -313,9 +313,25 @@ function M.setup()
     ["@module"] = { link = "Include" },
 
     -- tsx
-    ["@tag.tsx"] = { fg = c.green500 },
+    -- ["@tag.tsx"] = { fg = c.green500 },
     ["@constructor.tsx"] = { fg = c.blue500 },
     ["@tag.delimiter.tsx"] = { fg = c.orange500 },
+    ["@tag.tsx"] = { fg = c.orange500 },
+    ["@keyword.return.tsx"] = { fg = "#768900", style = "italic" },
+    ["@keyword.tsx"] = { fg = "#768900", style = "italic" },
+
+    -- typescript
+    --@variable.typescript
+    ["@variable.typescript"] = { fg = c.yellow500 },
+
+    --html
+    ["@tag.delimiter.html"] = { fg = c.orange500 },
+
+    --  javascriptreact
+    ["@keyword.javascript"] = { fg = "#768900", style = "italic" },
+    ["@keyword.return.javascript"] = { fg = "#768900", style = "italic" },
+    ["@tag.delimiter.javascript"] = { fg = c.red500 },
+    ["@tag.javascript"] = { fg = c.orange500 },
 
     -- LSP Semantic Token Groups
     ["@lsp.type.boolean"] = { link = "@boolean" },
