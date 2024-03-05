@@ -88,6 +88,8 @@ function M.setup()
     WarningMsg = { fg = c.orange500, bold = true }, -- warning messages
     Whitespace = { fg = c.base01 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu = { fg = c.base2, bg = c.base02, reverse = true }, -- current match in 'wildmenu' completion
+    WinBar = { link = "StatusLine" }, -- window bar
+    WinBarNC = { link = "StatusLineNC" }, -- window bar in inactive windows
 
     -- These groups are not listed as default vim groups,
     -- but they are defacto standard group names for syntax highlighting.
@@ -166,6 +168,8 @@ function M.setup()
     debugPC = { bg = c.bg_sidebar }, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { fg = c.blue300, bg = c.blue700 }, -- used for breakpoint colors in terminal-debug
 
+    dosIniLabel = { link = "@property" },
+
     -- These groups are for the native LSP client. Some other LSP clients may
     -- use these groups, or use their own. Consult your LSP client's
     -- documentation.
@@ -198,7 +202,62 @@ function M.setup()
     DapStoppedLine = { bg = c.yellow700 }, -- Used for "Warning" diagnostic virtual text
 
     -- These groups are for the Neovim tree-sitter highlights.
-    -- As of writing, tree-sitter support is a WIP, group names may change.
+    ["@annotation"] = { link = "PreProc" },
+    ["@attribute"] = { link = "PreProc" },
+    ["@boolean"] = { link = "Boolean" },
+    ["@character"] = { link = "Character" },
+    ["@character.special"] = { link = "SpecialChar" },
+    ["@comment"] = { link = "Comment" },
+    ["@keyword.conditional"] = { link = "Conditional" },
+    ["@constant"] = { link = "Constant" },
+    ["@constant.builtin"] = { link = "Special" },
+    ["@constant.macro"] = { link = "Define" },
+    ["@keyword.debug"] = { link = "Debug" },
+    ["@keyword.directive.define"] = { link = "Define" },
+    ["@keyword.exception"] = { link = "Exception" },
+    ["@number.float"] = { link = "Float" },
+    ["@function"] = { link = "Function" },
+    ["@function.builtin"] = { link = "Special" },
+    ["@function.call"] = { link = "@function" },
+    ["@function.macro"] = { link = "Macro" },
+    ["@keyword.import"] = { link = "Include" },
+    ["@keyword.coroutine"] = { link = "@keyword" },
+    ["@keyword.operator"] = { link = "@operator" },
+    ["@keyword.return"] = { link = "@keyword" },
+    ["@function.method"] = { link = "Function" },
+    ["@function.method.call"] = { link = "@function.method" },
+    ["@namespace.builtin"] = { link = "@variable.builtin" },
+    ["@none"] = {},
+    ["@number"] = { link = "Number" },
+    ["@keyword.directive"] = { link = "PreProc" },
+    ["@keyword.repeat"] = { link = "Repeat" },
+    ["@keyword.storage"] = { link = "StorageClass" },
+    ["@string"] = { link = "String" },
+    ["@markup.link.label"] = { link = "SpecialChar" },
+    ["@markup.link.label.symbol"] = { link = "Identifier" },
+    ["@tag"] = { link = "Label" },
+    ["@tag.attribute"] = { link = "@property" },
+    ["@tag.delimiter"] = { link = "Delimiter" },
+    ["@markup"] = { link = "@none" },
+    ["@markup.environment"] = { link = "Macro" },
+    ["@markup.environment.name"] = { link = "Type" },
+    ["@markup.raw"] = { link = "String" },
+    ["@markup.math"] = { link = "Special" },
+    ["@markup.strong"] = { bold = true },
+    ["@markup.emphasis"] = { italic = true },
+    ["@markup.strikethrough"] = { strikethrough = true },
+    ["@markup.underline"] = { underline = true },
+    ["@markup.heading"] = { link = "Title" },
+    ["@comment.note"] = { fg = c.hint },
+    ["@comment.error"] = { fg = c.error },
+    ["@comment.hint"] = { fg = c.hint },
+    ["@comment.info"] = { fg = c.info },
+    ["@comment.warning"] = { fg = c.warning },
+    ["@comment.todo"] = { fg = c.todo },
+    ["@markup.link.url"] = { link = "Underlined" },
+    ["@type"] = { link = "Type" },
+    ["@type.definition"] = { link = "Typedef" },
+    ["@type.qualifier"] = { link = "@keyword" },
 
     --- Misc
     -- TODO:
@@ -210,49 +269,48 @@ function M.setup()
     ["@punctuation.bracket"] = { fg = c.orange500 }, -- For brackets and parens.
     ["@punctuation.special"] = { fg = c.orange500 }, -- For special punctutation that does not fall in the catagories before.
     ["@punctuation.special.markdown"] = { fg = c.orange500, bold = true },
+    ["@markup.list"] = { fg = c.blue500 }, -- For special punctutation that does not fall in the catagories before.
+    ["@markup.list.markdown"] = { fg = c.orange500, bold = true },
 
     --- Literals
     ["@string.documentation"] = { fg = c.cyan500 },
-    ["@string.regex"] = { fg = c.cyan300 }, -- For regexes.
+    ["@string.regexp"] = { fg = c.cyan300 }, -- For regexes.
     ["@string.escape"] = { fg = c.orange700 }, -- For escape characters within a string.
 
     --- Functions
     ["@constructor"] = { fg = c.orange500 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    ["@parameter"] = { fg = c.orange500 }, -- For parameters of a function.
-    -- TODO:
-    -- ["@parameter.builtin"] = {}, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
+    ["@variable.parameter"] = { fg = c.orange500 }, -- For parameters of a function.
+    ["@variable.parameter.builtin"] = { fg = c.yellow300 }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
     --- Keywords
     ["@keyword"] = { fg = c.green500, style = options.styles.keywords }, -- For keywords that don't fall in previous categories.
-    -- TODO:
-    -- ["@keyword.coroutine"] = { }, -- For keywords related to coroutines.
     ["@keyword.function"] = { fg = c.green500, style = options.styles.functions }, -- For keywords used to define a fuction.
 
     ["@label"] = { fg = c.green500 }, -- For labels: `label:` in C and `:label:` in Lua.
 
     --- Types
     ["@type.builtin"] = { link = "Type" },
-    ["@field"] = { link = "Identifier" }, -- For fields.
+    ["@variable.member"] = { fg = c.cyan500 }, -- For fields.
     ["@property"] = { link = "Identifier" },
 
     --- Identifiers
     ["@variable"] = { fg = c.base0, style = options.styles.variables }, -- Any variable name that does not have another highlight.
     ["@variable.builtin"] = { fg = c.orange500 }, -- Variable names that are defined by the languages, like `this` or `self`.
+    ["@module.builtin"] = { fg = c.orange500 }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     --- Text
-    ["@text.literal.markdown"] = { fg = c.red500 },
-    ["@text.literal.markdown_inline"] = { fg = c.yellow500, bg = c.green900 },
-    ["@text.reference"] = { fg = c.blue500, underline = true },
+    -- ["@markup.raw.markdown"] = { fg = c.blue },
+    ["@markup.raw.markdown_inline"] = { fg = c.yellow500, bg = c.green900 },
+    ["@markup.link"] = { fg = c.blue500, underline = true },
 
-    ["@text.todo.unchecked"] = { fg = c.yellow500 }, -- For brackets and parens.
-    ["@text.todo.checked"] = { fg = c.green500 }, -- For brackets and parens.
-    ["@text.warning"] = { fg = c.yellow900, bg = c.yellow500 },
-    ["@text.danger"] = { fg = c.red900, bg = c.red500 },
+    ["@markup.list.unchecked"] = { fg = c.yellow500 }, -- For brackets and parens.
+    ["@markup.list.checked"] = { fg = c.green500 }, -- For brackets and parens.
 
-    ["@text.diff.add"] = { link = "DiffAdd" },
-    ["@text.diff.delete"] = { link = "DiffDelete" },
+    ["@diff.plus"] = { link = "DiffAdd" },
+    ["@diff.minus"] = { link = "DiffDelete" },
+    ["@diff.delta"] = { link = "DiffChange" },
 
-    ["@namespace"] = { fg = c.blue500, style = options.styles.variables },
+    ["@module"] = { link = "Include" },
 
     -- tsx
     ["@tag.tsx"] = { fg = c.green500 },
@@ -263,19 +321,24 @@ function M.setup()
     ["@lsp.type.boolean"] = { link = "@boolean" },
     ["@lsp.type.builtinType"] = { link = "@type.builtin" },
     ["@lsp.type.comment"] = { link = "@comment" },
+    ["@lsp.type.decorator"] = { link = "@attribute" },
+    ["@lsp.type.deriveHelper"] = { link = "@attribute" },
     ["@lsp.type.enum"] = { link = "@type" },
     ["@lsp.type.enumMember"] = { link = "@constant" },
     ["@lsp.type.escapeSequence"] = { link = "@string.escape" },
-    ["@lsp.type.formatSpecifier"] = { link = "@punctuation.special" },
+    ["@lsp.type.formatSpecifier"] = { link = "@markup.list" },
+    ["@lsp.type.generic"] = { link = "@variable" },
     ["@lsp.type.interface"] = { fg = c.blue500 },
     ["@lsp.type.keyword"] = { link = "@keyword" },
-    ["@lsp.type.namespace"] = { link = "@namespace" },
+    ["@lsp.type.lifetime"] = { link = "@keyword.storage" },
+    ["@lsp.type.namespace"] = { link = "@module" },
     ["@lsp.type.number"] = { link = "@number" },
     ["@lsp.type.operator"] = { link = "@operator" },
-    ["@lsp.type.parameter"] = { link = "@parameter" },
+    ["@lsp.type.parameter"] = { link = "@variable.parameter" },
     ["@lsp.type.property"] = { link = "@property" },
     ["@lsp.type.selfKeyword"] = { link = "@variable.builtin" },
-    ["@lsp.type.string.rust"] = { link = "@string" },
+    ["@lsp.type.selfTypeKeyword"] = { link = "@variable.builtin" },
+    ["@lsp.type.string"] = { link = "@string" },
     ["@lsp.type.typeAlias"] = { link = "@type.definition" },
     ["@lsp.type.unresolvedReference"] = { undercurl = true, sp = c.error },
     ["@lsp.type.variable"] = {}, -- use treesitter styles for regular variables
@@ -284,13 +347,18 @@ function M.setup()
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
     ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.keyword.async"] = { link = "@keyword.coroutine" },
+    ["@lsp.typemod.keyword.injected"] = { link = "@keyword" },
     ["@lsp.typemod.macro.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.operator.injected"] = { link = "@operator" },
     ["@lsp.typemod.string.injected"] = { link = "@string" },
+    ["@lsp.typemod.struct.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.type.defaultLibrary"] = { fg = c.blue500 },
+    ["@lsp.typemod.typeAlias.defaultLibrary"] = { fg = c.blue500 },
+    ["@lsp.typemod.variable.callable"] = { link = "@function" },
     ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
     ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+    ["@lsp.typemod.variable.static"] = { link = "@constant" },
     -- NOTE: maybe add these with distinct highlights?
     -- ["@lsp.typemod.variable.globalScope"] (global variables)
 
@@ -428,6 +496,9 @@ function M.setup()
     DashboardHeader = { fg = c.blue },
     DashboardCenter = { fg = c.magenta },
     DashboardFooter = { fg = c.yellow, italic = true },
+    DashboardKey = { fg = c.orange500 },
+    DashboardDesc = { fg = c.cyan500 },
+    DashboardIcon = { fg = c.cyan500, bold = true },
 
     -- Alpha
     AlphaShortcut = { fg = c.orange },
@@ -568,13 +639,15 @@ function M.setup()
 
     CmpItemKindDefault = { fg = c.base01, bg = c.none },
 
-    CmpItemKindKeyword = { fg = c.cyan, bg = c.none },
+    CmpItemKindCodeium = { fg = c.cyan500, bg = c.none },
+    CmpItemKindCopilot = { fg = c.cyan500, bg = c.none },
+    CmpItemKindTabNine = { fg = c.cyan500, bg = c.none },
 
+    CmpItemKindKeyword = { fg = c.cyan, bg = c.none },
     CmpItemKindVariable = { fg = c.magenta, bg = c.none },
     CmpItemKindConstant = { fg = c.magenta, bg = c.none },
     CmpItemKindReference = { fg = c.magenta, bg = c.none },
     CmpItemKindValue = { fg = c.magenta, bg = c.none },
-    CmpItemKindCopilot = { fg = c.cyan500, bg = c.none },
 
     CmpItemKindFunction = { fg = c.blue, bg = c.none },
     CmpItemKindMethod = { fg = c.blue, bg = c.none },
@@ -741,33 +814,6 @@ function M.setup()
     -- Noice
 
     NoiceCompletionItemKindDefault = { fg = c.base01, bg = c.none },
-
-    NoiceCompletionItemKindKeyword = { fg = c.cyan, bg = c.none },
-
-    NoiceCompletionItemKindVariable = { fg = c.magenta, bg = c.none },
-    NoiceCompletionItemKindConstant = { fg = c.magenta, bg = c.none },
-    NoiceCompletionItemKindReference = { fg = c.magenta, bg = c.none },
-    NoiceCompletionItemKindValue = { fg = c.magenta, bg = c.none },
-
-    NoiceCompletionItemKindFunction = { fg = c.blue, bg = c.none },
-    NoiceCompletionItemKindMethod = { fg = c.blue, bg = c.none },
-    NoiceCompletionItemKindConstructor = { fg = c.blue, bg = c.none },
-
-    NoiceCompletionItemKindClass = { fg = c.orange, bg = c.none },
-    NoiceCompletionItemKindInterface = { fg = c.orange, bg = c.none },
-    NoiceCompletionItemKindStruct = { fg = c.orange, bg = c.none },
-    NoiceCompletionItemKindEvent = { fg = c.orange, bg = c.none },
-    NoiceCompletionItemKindEnum = { fg = c.orange, bg = c.none },
-    NoiceCompletionItemKindUnit = { fg = c.orange, bg = c.none },
-
-    NoiceCompletionItemKindModule = { fg = c.yellow, bg = c.none },
-
-    NoiceCompletionItemKindProperty = { fg = c.cyan, bg = c.none },
-    NoiceCompletionItemKindField = { fg = c.cyan, bg = c.none },
-    NoiceCompletionItemKindTypeParameter = { fg = c.cyan, bg = c.none },
-    NoiceCompletionItemKindEnumMember = { fg = c.cyan, bg = c.none },
-    NoiceCompletionItemKindOperator = { fg = c.cyan, bg = c.none },
-    NoiceCompletionItemKindSnippet = { fg = c.violet500, bg = c.none },
 
     TreesitterContext = { bg = c.violet900 },
     Hlargs = { fg = c.yellow },
