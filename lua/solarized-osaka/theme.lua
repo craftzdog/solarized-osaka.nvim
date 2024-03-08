@@ -320,13 +320,15 @@ function M.setup()
     ["@keyword.tsx"] = { fg = "#768900", style = "italic" },
 
     -- typescript
-    --@variable.typescript
     ["@variable.typescript"] = { fg = c.yellow500 },
 
-    --html
+    -- Vue
+    ["@tag.delimiter.vue"] = { fg = c.orange500 },
+
+    -- html
     ["@tag.delimiter.html"] = { fg = c.orange500 },
 
-    --  javascriptreact
+    -- javascriptreact
     ["@keyword.javascript"] = { fg = "#768900", style = "italic" },
     ["@keyword.return.javascript"] = { fg = "#768900", style = "italic" },
     ["@tag.delimiter.javascript"] = { fg = c.orange500 },
@@ -851,6 +853,13 @@ function M.setup()
       end
     end
   end
+  local markdown_rainbow = { c.blue, c.yellow, c.green, c.red, c.magenta, c.cyan }
+
+  for i, color in ipairs(markdown_rainbow) do
+    theme.highlights["@markup.heading." .. i .. ".markdown"] = { fg = color, bold = true }
+    theme.highlights["Headline" .. i] = { bg = util.darken(color, 0.05) }
+  end
+  theme.highlights["Headline"] = { link = "Headline1" }
 
   ---@type table<string, table>
   theme.defer = {}
