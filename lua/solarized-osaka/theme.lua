@@ -859,7 +859,6 @@ function M.setup()
     theme.highlights["@markup.heading." .. i .. ".markdown"] = { fg = color, bold = true }
     theme.highlights["Headline" .. i] = { bg = util.darken(color, 0.05) }
   end
-  theme.highlights["Headline"] = { link = "Headline1" }
 
   ---@type table<string, table>
   theme.defer = {}
