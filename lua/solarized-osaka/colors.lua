@@ -116,6 +116,7 @@ function M.setup(opts)
   colors.warning = colors.yellow500
   colors.info = colors.blue500
   colors.hint = colors.cyan500
+  colors.todo = colors.violet500
 
   config.options.on_colors(colors)
   if opts.transform and config.is_day() then

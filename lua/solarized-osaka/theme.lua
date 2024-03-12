@@ -313,9 +313,27 @@ function M.setup()
     ["@module"] = { link = "Include" },
 
     -- tsx
-    ["@tag.tsx"] = { fg = c.green500 },
     ["@constructor.tsx"] = { fg = c.blue500 },
     ["@tag.delimiter.tsx"] = { fg = c.orange500 },
+    ["@tag.tsx"] = { fg = c.yellow500 },
+    ["@keyword.return.tsx"] = { fg = c.green500, style = "italic" },
+    ["@keyword.tsx"] = { fg = c.green500, style = "italic" },
+
+    -- typescript
+    ["@variable.typescript"] = { fg = c.yellow500 },
+
+    -- Vue
+    ["@tag.delimiter.vue"] = { fg = c.orange500 },
+
+    -- html
+    ["@tag.delimiter.html"] = { fg = c.orange500 },
+
+    -- javascriptreact
+    ["@keyword.javascript"] = { fg = c.green500, style = "italic" },
+    ["@keyword.return.javascript"] = { fg = c.green500, style = "italic" },
+    ["@tag.delimiter.javascript"] = { fg = c.orange500 },
+    ["@tag.javascript"] = { fg = c.yellow500 },
+    ["@variable.javascript"] = { fg = c.yellow500 },
 
     -- LSP Semantic Token Groups
     ["@lsp.type.boolean"] = { link = "@boolean" },
@@ -609,7 +627,7 @@ function M.setup()
     LeapBackdrop = { fg = c.base01 },
 
     FlashBackdrop = { fg = c.base01 },
-    FlashLabel = { bg = c.magenta500, bold = true, fg = c.fg },
+    FlashLabel = { bg = c.magenta500, bold = true, fg = c.bg },
 
     LightspeedGreyWash = { fg = c.base01 },
     -- LightspeedCursor = { link = "Cursor" },
