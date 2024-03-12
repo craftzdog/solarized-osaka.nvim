@@ -853,12 +853,6 @@ function M.setup()
       end
     end
   end
-  local markdown_rainbow = { c.blue, c.yellow, c.green, c.red, c.magenta, c.cyan }
-
-  for i, color in ipairs(markdown_rainbow) do
-    theme.highlights["@markup.heading." .. i .. ".markdown"] = { fg = color, bold = true }
-    theme.highlights["Headline" .. i] = { bg = util.darken(color, 0.05) }
-  end
 
   ---@type table<string, table>
   theme.defer = {}
