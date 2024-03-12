@@ -627,7 +627,7 @@ function M.setup()
     LeapBackdrop = { fg = c.base01 },
 
     FlashBackdrop = { fg = c.base01 },
-    FlashLabel = { bg = c.magenta500, bold = true, fg = c.fg },
+    FlashLabel = { bg = c.magenta500, bold = true, fg = c.bg },
 
     LightspeedGreyWash = { fg = c.base01 },
     -- LightspeedCursor = { link = "Cursor" },
