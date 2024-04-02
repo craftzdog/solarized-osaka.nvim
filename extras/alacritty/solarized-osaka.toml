@@ -1,0 +1,29 @@
+# Colors (Solarized Osaka)
+# HSL convert HEX using https://colordesigner.io/
+
+# Default colors
+[colors.primary]
+background = '#00141a' #color.base04
+foreground = '#839495' #color.fg
+
+# Normal colors
+[colors.normal]
+black   = '#00141a' #color.base04
+red     = '#dc312e' #color.red
+green   = '#859900' #color.green
+yellow  = '#b38600' #color.yellow
+blue    = '#278bd3' #color.blue
+magenta = '#d33682' #color.magenta
+cyan    = '#2aa298' #color.cyan
+white   = '#ede7d4' #color.base2
+
+# Bright colors
+[colors.bright]
+black   = '#002d38' #color.base03
+red     = '#f65351' #color.red300
+green   = '#b7fa00' #color.green300
+yellow  = '#ffbf00' #color.yellow300
+blue    = '#47adf5' #color.blue300
+magenta = '#f254a1' #color.magenta300
+cyan    = '#2beede' #color.cyan300
+white   = '#fdf6e2' #color.base3
