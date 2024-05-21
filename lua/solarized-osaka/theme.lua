@@ -173,9 +173,9 @@ function M.setup()
     -- These groups are for the native LSP client. Some other LSP clients may
     -- use these groups, or use their own. Consult your LSP client's
     -- documentation.
-    LspReferenceText = { underline = true }, -- used for highlighting "text" references
-    LspReferenceRead = { underline = true }, -- used for highlighting "read" references
-    LspReferenceWrite = { underline = true }, -- used for highlighting "write" references
+    LspReferenceText = { bg = c.magenta900 }, -- used for highlighting "text" references
+    LspReferenceRead = { bg = c.magenta900 }, -- used for highlighting "read" references
+    LspReferenceWrite = { bg = c.magenta900 }, -- used for highlighting "write" references
 
     DiagnosticError = { fg = c.error }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticWarn = { fg = c.warning }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
