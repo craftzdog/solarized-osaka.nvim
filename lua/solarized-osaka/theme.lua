@@ -779,17 +779,99 @@ function M.setup()
     NotifyTRACEBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
 
     -- Mini
-    MiniCompletionActiveParameter = { underline = true },
+    MiniAnimateCursor = { reverse = true, nocombine = true },
+    MiniAnimateNormalFloat = { link = "NormalFloat" },
 
-    MiniCursorword = { bg = c.base01 },
-    MiniCursorwordCurrent = { bg = c.base01 },
+    MiniClueBorder = { link = "FloatBorder" },
+    MiniClueDescGroup = { link = "DiagnosticFloatingWarn" },
+    MiniClueDescSingle = { link = "NormalFloat" },
+    MiniClueNextKey = { link = "DiagnosticFloatingHint" },
+    MiniClueNextKeyWithPostkeys = { link = "DiagnosticFloatingError" },
+    MiniClueSeparator = { link = "DiagnosticFloatingInfo" },
+    MiniClueTitle = { link = "FloatTitle" },
+
+    MiniCompletionActiveParameter = { link = 'LspSignatureActiveParameter' },
+
+    MiniCursorword = { underline = true },
+    MiniCursorwordCurrent = { underline = true },
+
+    MiniDepsChangeAdded = { link = "diffAdded" },
+    MiniDepsChangeRemoved = { link = "diffRemoved" },
+    MiniDepsHint = { link = "DiagnosticHint" },
+    MiniDepsInfo = { link = "DiagnosticInfo" },
+    MiniDepsMsgBreaking = { link = "DiagnosticWarn" },
+    MiniDepsPlaceholder = { link = "Comment" },
+    MiniDepsTitle = { link = "Title" },
+    MiniDepsTitleError = { link = "DiffDelete" },
+    MiniDepsTitleSame = { link = "DiffText" },
+    MiniDepsTitleUpdate = { link = "DiffAdd" },
+
+    MiniDiffOverAdd = { link = "DiffAdd" },
+    MiniDiffOverChange = { link = "DiffText" },
+    MiniDiffOverContext = { link = "DiffChange" },
+    MiniDiffOverDelete = { link = "DiffDelete" },
+    MiniDiffSignAdd = { fg = c.green500 },
+    MiniDiffSignChange = { fg = c.yellow500 },
+    MiniDiffSignDelete = { fg = c.red500 },
+
+    MiniFilesBorder = { link = "FloatBorder" },
+    MiniFilesBorderModified = { link = "DiagnosticFloatingWarn" },
+    MiniFilesCursorLine = { link = "CursorLine" },
+    MiniFilesDirectory = { link = "Directory" },
+    MiniFilesFile = { fg = c.fg },
+    MiniFilesNormal = { link = "NormalFloat" },
+    MiniFilesTitle = { link = "FloatTitle" },
+    MiniFilesTitleFocused = { fg = c.hint, bg = c.bg_float },
+
+    MiniHipatternsFixme = { fg = c.bg, bg = c.error, bold = true },
+    MiniHipatternsHack = { fg = c.bg, bg = c.warning, bold = true },
+    MiniHipatternsNote = { fg = c.bg, bg = c.info, bold = true },
+    MiniHipatternsTodo = { fg = c.bg, bg = c.hint, bold = true },
+
+    MiniIconsAzure = { fg = c.blue300 },
+    MiniIconsBlue = { fg = c.blue },
+    MiniIconsCyan = { fg = c.cyan },
+    MiniIconsGreen = { fg = c.green },
+    MiniIconsGrey = { fg = c.base2 },
+    MiniIconsOrange = { fg = c.orange },
+    MiniIconsPurple = { fg = c.violet },
+    MiniIconsRed = { fg = c.red },
+    MiniIconsYellow = { fg = c.yellow },
 
     MiniIndentscopeSymbol = { fg = c.violet700, nocombine = true },
-    MiniIndentscopePrefix = { nocombine = true }, -- Make it invisible
+    MiniIndentscopeSymbolOff = { fg = c.warning, nocombine = true },
 
     MiniJump = { bg = c.magenta500, fg = c.base4 },
 
+    MiniJump2dDim = { fg = c.base01 },
     MiniJump2dSpot = { fg = c.magenta500, bold = true, nocombine = true },
+    MiniJump2dSpotAhead = { fg = c.cyan500, bg = c.black, nocombine = true },
+    MiniJump2dSpotUnique = { fg = c.yellow500, bold = true, nocombine = true },
+
+    MiniMapNormal = { link = "NormalFloat" },
+    MiniMapSymbolCount = { link = "Special" },
+    MiniMapSymbolLine = { link = "Title" },
+    MiniMapSymbolView = { link = "Delimiter" },
+
+    MiniNotifyBorder = { link = "FloatBorder" },
+    MiniNotifyNormal = { link = "NormalFloat" },
+    MiniNotifyTitle = { link = "FloatTitle" },
+
+    MiniOperatorsExchangeFrom = { link = "IncSearch" },
+
+    MiniPickBorder = { link = "FloatBorder" },
+    MiniPickBorderBusy = { link = "DiagnosticFloatingWarn" },
+    MiniPickBorderText = { link = "FloatTitle" },
+    MiniPickHeader = { link = "DiagnosticFloatingHint" },
+    MiniPickIconDirectory = { link = "Directory" },
+    MiniPickIconFile = { link = "MiniPickNormal" },
+    MiniPickMatchCurrent = { link = "CursorLine" },
+    MiniPickMatchMarked = { link = "Visual" },
+    MiniPickMatchRanges = { link = "DiagnosticFloatingHint" },
+    MiniPickNormal = { link = "NormalFloat" },
+    MiniPickPreviewLine = { link = "CursorLine" },
+    MiniPickPreviewRegion = { link = "IncSearch" },
+    MiniPickPrompt = { link = "DiagnosticFloatingInfo" },
 
     MiniStarterCurrent = { nocombine = true },
     MiniStarterFooter = { fg = c.yellow, italic = true },
@@ -814,12 +896,12 @@ function M.setup()
 
     MiniSurround = { bg = c.orange, fg = c.black },
 
-    MiniTablineCurrent = { fg = c.fg, bg = c.base01 },
+    MiniTablineCurrent = { fg = c.fg, bg = c.base02, bold = true },
     MiniTablineFill = { bg = c.black },
     MiniTablineHidden = { fg = c.violet500, bg = c.bg_statusline },
-    MiniTablineModifiedCurrent = { fg = c.warning, bg = c.base01 },
-    MiniTablineModifiedHidden = { bg = c.bg_statusline, fg = util.darken(c.warning, 0.7) },
-    MiniTablineModifiedVisible = { fg = c.warning, bg = c.bg_statusline },
+    MiniTablineModifiedCurrent = { fg = c.base02, bg = c.fg, bold = true },
+    MiniTablineModifiedHidden = { fg = c.bg_statusline, bg = c.violet500 },
+    MiniTablineModifiedVisible = { fg = c.bg_statusline, bg = c.fg },
     MiniTablineTabpagesection = { bg = c.bg_statusline, fg = c.none },
     MiniTablineVisible = { fg = c.fg, bg = c.bg_statusline },
 
