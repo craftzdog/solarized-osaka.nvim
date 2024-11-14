@@ -622,8 +622,7 @@ function M.setup()
     TSNodeUnmatched = { fg = c.base01 },
 
     LeapMatch = { bg = c.magenta500, fg = c.fg, bold = true },
-    LeapLabelPrimary = { fg = c.magenta500, bold = true },
-    LeapLabelSecondary = { fg = c.cyan, bold = true },
+    LeapLabel = { fg = c.magenta500, bold = true },
     LeapBackdrop = { fg = c.base01 },
 
     FlashBackdrop = { fg = c.base01 },
@@ -790,7 +789,7 @@ function M.setup()
     MiniClueSeparator = { link = "DiagnosticFloatingInfo" },
     MiniClueTitle = { link = "FloatTitle" },
 
-    MiniCompletionActiveParameter = { link = 'LspSignatureActiveParameter' },
+    MiniCompletionActiveParameter = { link = "LspSignatureActiveParameter" },
 
     MiniCursorword = { underline = true },
     MiniCursorwordCurrent = { underline = true },
