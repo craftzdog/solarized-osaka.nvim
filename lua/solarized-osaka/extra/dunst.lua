@@ -6,7 +6,7 @@ local M = {}
 function M.generate(colors)
   local dunst = util.template(
     [[
-# TokyoNight colors for dunst
+# solarized-osaka colors for dunst
 # For more configuraion options see https://github.com/dunst-project/dunst/blob/master/dunstrc
 
 [urgency_low]
