@@ -103,8 +103,13 @@ function M.setup(opts)
   colors.fg_gutter = colors.base01
   colors.bg_visual = colors.blue500
   colors.green1 = colors.green500
-  colors.dark3 = colors.base03
+  colors.dark3 = colors.base02
   colors.fg_dark = colors.base01
+  colors.bg_dark = colors.base03
+  colors.terminal_black = colors.bg
+  colors.red1 = colors.red300
+  colors.comment = colors.base01
+  colors.purple = colors.violet500
 
   -- Sidebar and Floats are configurable
   colors.bg_sidebar = config.options.styles.sidebars == "transparent" and colors.none
