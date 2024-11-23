@@ -496,6 +496,7 @@ function M.setup()
     NeoTreeNormal = { fg = c.base00, bg = c.bg_sidebar },
     NeoTreeNormalNC = { fg = c.base00, bg = c.bg_sidebar },
     NeoTreeDimText = { fg = c.base01 },
+    NeoTreeMessage = { fg = util.lighten(c.base02, 0.8) },
 
     -- Fern
     FernBranchText = { fg = c.blue },
@@ -528,6 +529,7 @@ function M.setup()
     SnacksNotifierBorderTrace = { fg = c.magenta500 },
     SnacksNotifierIconTrace = { fg = c.magenta500 },
     SnacksNotifierTitleTrace = { fg = c.magenta500 },
+
     -- Alpha
     AlphaShortcut = { fg = c.orange },
     AlphaHeader = { fg = c.blue },
