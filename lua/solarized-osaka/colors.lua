@@ -1,6 +1,7 @@
 local util = require("solarized-osaka.util")
 local hslutil = require("solarized-osaka.hsl")
 local hsl = hslutil.hslToHex
+local reassign = require("solarized-osaka.reassign")
 
 local M = {}
 
@@ -93,23 +94,15 @@ function M.setup(opts)
   util.bg = colors.bg
   util.day_brightness = config.options.day_brightness
 
+  -- INFO: Made a separate file so easier to change if needed
+  colors = reassign.setup(colors)
+
   colors.black = util.darken(colors.bg, 0.8, "#000000")
   colors.border = colors.black
 
   -- Popups and statusline always get a dark background
   colors.bg_popup = colors.base04
   colors.bg_statusline = colors.base03
-  colors.fg_sidebar = colors.base0
-  colors.fg_gutter = colors.base01
-  colors.bg_visual = colors.blue500
-  colors.green1 = colors.green500
-  colors.dark3 = colors.base02
-  colors.fg_dark = colors.base01
-  colors.bg_dark = colors.base03
-  colors.terminal_black = colors.bg
-  colors.red1 = colors.red300
-  colors.comment = colors.base01
-  colors.purple = colors.violet500
 
   -- Sidebar and Floats are configurable
   colors.bg_sidebar = config.options.styles.sidebars == "transparent" and colors.none
