@@ -496,7 +496,7 @@ function M.setup()
     NeoTreeNormal = { fg = c.base00, bg = c.bg_sidebar },
     NeoTreeNormalNC = { fg = c.base00, bg = c.bg_sidebar },
     NeoTreeDimText = { fg = c.base01 },
-    NeoTreeMessage = { fg = util.lighten(c.base02, 0.8) },
+    NeoTreeMessage = { fg = c.base01 },
 
     -- Fern
     FernBranchText = { fg = c.blue },
