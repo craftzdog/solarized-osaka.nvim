@@ -44,7 +44,7 @@ bg_color = "#191b28"
 
 [metadata]
 aliases = []
-author = "folke"
+author = "craftzdog"
 name = "${_style_name}"]],
     colors
   )

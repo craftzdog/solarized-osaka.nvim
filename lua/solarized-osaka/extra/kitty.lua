@@ -16,17 +16,17 @@ function M.generate(colors)
 
 background ${bg}
 foreground ${fg}
-selection_background ${bg_visual}
+selection_background ${base03}
 selection_foreground ${fg}
-url_color ${green1}
+url_color ${cyan}
 cursor ${fg}
 cursor_text_color ${bg}
 
 # Tabs
-active_tab_background ${blue}
-active_tab_foreground ${bg_dark}
+active_tab_background ${cyan}
+active_tab_foreground ${base4}
 inactive_tab_background ${bg_highlight}
-inactive_tab_foreground ${dark3}
+inactive_tab_foreground ${base00}
 #tab_bar_background ${black}
 
 # Windows
@@ -41,10 +41,10 @@ color3 ${yellow}
 color4 ${blue}
 color5 ${magenta}
 color6 ${cyan}
-color7 ${fg_dark}
+color7 ${fg}
 
 # bright
-color8 ${terminal_black}
+color8 ${base01}
 color9 ${red}
 color10 ${green}
 color11 ${yellow}
@@ -55,7 +55,7 @@ color15 ${fg}
 
 # extended colors
 color16 ${orange}
-color17 ${red1}
+color17 ${red300}
 ]],
     colors
   )

@@ -1,6 +1,7 @@
 local util = require("solarized-osaka.util")
 local hslutil = require("solarized-osaka.hsl")
 local hsl = hslutil.hslToHex
+local reassign = require("solarized-osaka.reassign")
 
 local M = {}
 
@@ -92,6 +93,9 @@ function M.setup(opts)
 
   util.bg = colors.bg
   util.day_brightness = config.options.day_brightness
+
+  -- INFO: Made a separate file so easier to change if needed
+  colors = reassign.setup(colors)
 
   colors.black = util.darken(colors.bg, 0.8, "#000000")
   colors.border = colors.black

@@ -496,6 +496,7 @@ function M.setup()
     NeoTreeNormal = { fg = c.base00, bg = c.bg_sidebar },
     NeoTreeNormalNC = { fg = c.base00, bg = c.bg_sidebar },
     NeoTreeDimText = { fg = c.base01 },
+    NeoTreeMessage = { fg = c.base01 },
 
     -- Fern
     FernBranchText = { fg = c.blue },
@@ -517,6 +518,17 @@ function M.setup()
     DashboardKey = { fg = c.orange500 },
     DashboardDesc = { fg = c.cyan500 },
     DashboardIcon = { fg = c.cyan500, bold = true },
+
+    -- Snacks
+    SnacksDashboardDesc = { fg = c.cyan500 },
+    SnacksDashboardKey = { fg = c.orange500 },
+    SnacksDashboardFooter = { fg = c.yellow, italic = true },
+    SnacksDashboardSpecial = { fg = c.yellow500 },
+    SnacksDashboardHeader = { fg = c.blue },
+    SnacksDashboardIcon = { fg = c.cyan500, bold = true },
+    SnacksNotifierBorderTrace = { fg = c.magenta500 },
+    SnacksNotifierIconTrace = { fg = c.magenta500 },
+    SnacksNotifierTitleTrace = { fg = c.magenta500 },
 
     -- Alpha
     AlphaShortcut = { fg = c.orange },
