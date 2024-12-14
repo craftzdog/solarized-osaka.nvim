@@ -529,6 +529,8 @@ function M.setup()
     SnacksNotifierBorderTrace = { fg = c.magenta500 },
     SnacksNotifierIconTrace = { fg = c.magenta500 },
     SnacksNotifierTitleTrace = { fg = c.magenta500 },
+    SnacksIndentScope = { fg = c.violet700, nocombine = true },
+    SnacksIndent = { fg = c.base03, nocombine = true },
 
     -- Alpha
     AlphaShortcut = { fg = c.orange },
