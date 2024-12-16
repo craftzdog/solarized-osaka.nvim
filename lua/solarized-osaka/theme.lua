@@ -657,9 +657,9 @@ function M.setup()
     LightspeedUnlabeledMatch = { fg = c.violet500, bold = true },
 
     --Blink-cmp
-    --INFO:(BlinkCmpLabel) currently unused by blink.cmp causing colors to use treesitter colors but added when is used
     BlinkCmpLabel = { fg = c.fg, bg = c.none },
     BlinkCmpLabelDeprecated = { fg = c.base01, bg = c.none, strikethrough = true },
+    --INFO: unused at the moment but passed still for future use
     BlinkCmpLabelMatch = { fg = c.violet500, bg = c.none },
 
     -- Documentation windows
