@@ -36,6 +36,20 @@ local defaults = {
   ---@param colors ColorScheme
   on_highlights = function(highlights, colors) end,
   use_background = true, -- can be light/dark/auto. When auto, background will be set to vim.o.background
+
+  ---@type table<string, boolean|{enabled:boolean}>
+  plugins = {
+    -- enable all plugins when not using lazy.nvim
+    -- set to false to manually enable/disable plugins
+    all = package.loaded.lazy == nil,
+    -- uses your plugin manager to automatically enable needed plugins
+    -- currently only lazy.nvim is supported
+    auto = true,
+    -- add any plugins here that you want to enable
+    -- for all possible plugins, see:
+    --   * https://github.com/craftzdog/solarized-osaka.nvim/tree/main/lua/solarized-osaka/groups
+    -- flash = true,
+  },
 }
 
 ---@type Config
