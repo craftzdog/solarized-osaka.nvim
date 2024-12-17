@@ -1,4 +1,3 @@
-local util = require("solarized-osaka.util")
 local theme = require("solarized-osaka.theme")
 local config = require("solarized-osaka.config")
 
@@ -20,7 +19,7 @@ function M.load(opts)
   if opts then
     require("solarized-osaka.config").extend(opts)
   end
-  util.load(theme.setup())
+  theme.setup()
 end
 
 M.setup = config.setup
