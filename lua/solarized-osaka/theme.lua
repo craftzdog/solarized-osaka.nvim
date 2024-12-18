@@ -1,11 +1,11 @@
-local util = require("solarized-osaka.util")
+local Util = require("solarized-osaka.util")
 
 local M = {}
 
 function M.setup()
   local colors = require("solarized-osaka.colors").setup()
-  local opts = require("solarized-osaka.config").options
-  local groups = require("solarized-osaka.groups").setup(colors, opts)
+  local opts = require("solarized-osaka.config")
+  local groups = require("solarized-osaka.groups").setup(colors, opts.options)
 
   if vim.g.colors_name then
     vim.cmd("hi clear")
@@ -13,6 +13,11 @@ function M.setup()
 
   vim.o.termguicolors = true
   vim.g.colors_name = "solarized-osaka"
+
+  if opts.is_day() then
+    Util.invert_colors(colors)
+    Util.invert_highlights(groups)
+  end
 
   for group, hl in pairs(groups) do
     hl = type(hl) == "string" and { link = hl } or hl
