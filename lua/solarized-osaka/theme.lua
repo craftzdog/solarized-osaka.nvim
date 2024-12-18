@@ -474,6 +474,17 @@ function M.setup()
     TelescopeBorder = { fg = c.base02, bg = c.bg_float },
     TelescopeNormal = { fg = c.base0, bg = c.bg_float },
 
+    -- FzfLua
+    FzfLuaNormal = { fg = c.base0, bg = c.bg_float },
+    FzfLuaBorder = { fg = c.base02, bg = c.bg_float },
+    FzfLuaCursor = { link = "IncSearch" },
+    FzfLuaFzfCursorLine = { link = "CursorLine" },
+    FzfLuaPath = { link = "Directory" },
+    FzfLuaHeaderText = { link = "Title" },
+    FzfLuaHeaderBind = { fg = c.yellow, bg = c.bg_float },
+    FzfLuaPreviewTitle = { fg = c.blue, bg = c.bg_float },
+    FzfLuaTitle = { fg = c.orange, bg = c.bg_float },
+
     -- NvimTree
     NvimTreeNormal = { fg = c.base00, bg = c.bg_sidebar },
     NvimTreeWinSeparator = {
