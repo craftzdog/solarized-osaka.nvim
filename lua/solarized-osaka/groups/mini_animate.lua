@@ -1,8 +1,9 @@
 local M = {}
 
 function M.get(c, opts)
+  -- stylua: ignore
   return {
-    MiniAnimateCursor = { reverse = true, nocombine = true },
+    MiniAnimateCursor      = { reverse = true, nocombine = true },
     MiniAnimateNormalFloat = "NormalFloat",
   }
 end

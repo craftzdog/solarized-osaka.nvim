@@ -1,6 +1,7 @@
 local M = {}
 
 function M.get(c, opts)
+  -- stylua: ignore
   return {
     rainbowcol1 = { fg = c.red500 },
     rainbowcol2 = { fg = c.orange500 },

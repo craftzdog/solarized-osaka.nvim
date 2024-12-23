@@ -1,6 +1,7 @@
 local M = {}
 
 function M.get(c, opts)
+  -- stylua: ignore
   return {
     GlyphPalette1 = { fg = c.red500 },
     GlyphPalette2 = { fg = c.green },

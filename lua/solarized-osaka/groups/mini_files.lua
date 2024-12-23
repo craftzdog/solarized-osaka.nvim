@@ -1,15 +1,16 @@
 local M = {}
 
 function M.get(c, opts)
+  -- stylua: ignore
   return {
-    MiniFilesBorder = "FloatBorder",
+    MiniFilesBorder         = "FloatBorder",
     MiniFilesBorderModified = "DiagnosticFloatingWarn",
-    MiniFilesCursorLine = "CursorLine",
-    MiniFilesDirectory = "Directory",
-    MiniFilesFile = { fg = c.fg },
-    MiniFilesNormal = "NormalFloat",
-    MiniFilesTitle = "FloatTitle",
-    MiniFilesTitleFocused = { fg = c.hint, bg = c.bg_float },
+    MiniFilesCursorLine     = "CursorLine",
+    MiniFilesDirectory      = "Directory",
+    MiniFilesFile           = { fg = c.fg },
+    MiniFilesNormal         = "NormalFloat",
+    MiniFilesTitle          = "FloatTitle",
+    MiniFilesTitleFocused   = { fg = c.hint, bg = c.bg_float },
   }
 end
 

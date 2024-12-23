@@ -1,11 +1,12 @@
 local M = {}
 
 function M.get(c, opts)
+  -- stylua: ignore
   return {
-    MiniMapNormal = "NormalFloat",
+    MiniMapNormal      = "NormalFloat",
     MiniMapSymbolCount = "Special",
-    MiniMapSymbolLine = "Title",
-    MiniMapSymbolView = "Delimiter",
+    MiniMapSymbolLine  = "Title",
+    MiniMapSymbolView  = "Delimiter",
   }
 end
 
