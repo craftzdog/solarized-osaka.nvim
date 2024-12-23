@@ -3,10 +3,13 @@ local M = {}
 function M.get(c, opts)
   -- stylua: ignore
   return {
-    NeoTreeNormal   = { fg = c.base00, bg = c.bg_sidebar },
-    NeoTreeNormalNC = { fg = c.base00, bg = c.bg_sidebar },
-    NeoTreeDimText  = { fg = c.base01 },
-    NeoTreeMessage  = { fg = c.base01 },
+    RainbowDelimiterRed    = { fg = c.red },
+    RainbowDelimiterOrange = { fg = c.orange },
+    RainbowDelimiterYellow = { fg = c.yellow },
+    RainbowDelimiterGreen  = { fg = c.green },
+    RainbowDelimiterBlue   = { fg = c.blue },
+    RainbowDelimiterViolet = { fg = c.violet },
+    RainbowDelimiterCyan   = { fg = c.cyan },
   }
 end
 
