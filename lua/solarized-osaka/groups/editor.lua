@@ -54,7 +54,12 @@ function M.get(c, options)
     SpellLocal = { sp = c.cyan500, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare = { sp = c.yellow500, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
     StatusLine = { fg = c.base1, bg = c.base03 }, -- status line of current window
-    StatusLineNC = { fg = c.base0, bg = c.base04 }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLineNC = {
+      fg = options.hide_inactive_statusline and c.bg or c.base0,
+      bg = options.hide_inactive_statusline and c.none or c.base04,
+      sp = options.hide_inactive_statusline and c.border or c.none,
+      underline = options.hide_inactive_statusline and true or false,
+    }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine = { fg = c.base0, bg = c.base02, sp = c.base0 }, -- tab pages line, not active tab page label
     TabLineFill = { fg = c.base0, bg = c.base02 }, -- tab pages line, where there are no labels
     TabLineSel = { fg = c.yellow500, bg = c.bg }, -- tab pages line, active tab page label
