@@ -10,6 +10,7 @@ M.plugins = {
   ["blink.cmp"]                     = "blink",
   ["dashboard-nvim"]                = "dashboard",
   ["flash.nvim"]                    = "flash",
+  ["fzf-lua"]                       = "fzf",
   ["vim-fern"]                      = "fern",
   ["gitsigns.nvim"]                 = "gitsigns",
   ["hop.nvim"]                      = "hop",
