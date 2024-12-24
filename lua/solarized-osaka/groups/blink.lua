@@ -3,7 +3,6 @@ local M = {}
 function M.get(c, opts)
   --stylua: ignore
   return {
-    --Blink-cmp
     BlinkCmpLabel                        = { fg = c.fg, bg = c.none },
     BlinkCmpLabelDeprecated              = { fg = c.base01, bg = c.none, strikethrough = true },
     --INFO: unused at the moment but passed still for future use
