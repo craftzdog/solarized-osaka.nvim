@@ -7,6 +7,7 @@ M.plugins = {
   ["alpha-nvim"]                    = "alpha",
   ["barbar.nvim"]                   = "barbar",
   ["bufferline.nvim"]               = "bufferline",
+  ["blink.cmp"]                     = "blink",
   ["dashboard-nvim"]                = "dashboard",
   ["flash.nvim"]                    = "flash",
   ["vim-fern"]                      = "fern",
