@@ -3,8 +3,8 @@ local M = {}
 function M.get(c, opts)
   -- stylua: ignore
   return {
-    DiagnosticWarning          = { link = "DiagnosticWarn" },
-    DiagnosticInformation      = { link = "DiagnosticInfo" },
+    DiagnosticWarning          = "DiagnosticWarn",
+    DiagnosticInformation      = "DiagnosticInfo",
     LspFloatWinNormal          = { bg = c.bg_float },
     LspFloatWinBorder          = { fg = c.base02 },
     LspSagaBorderTitle         = { fg = c.cyan },
