@@ -30,9 +30,25 @@ solarized_osaka.terminal = {
 }
 
 solarized_osaka.inactive = {
-  a = { bg = colors.bg_statusline, fg = colors.blue },
-  b = { bg = colors.bg_statusline, fg = colors.fg, gui = "bold" },
-  c = { bg = colors.bg_statusline, fg = colors.fg },
+  a = {
+    bg = config.hide_inactive_statusline and colors.none or colors.bg_statusline,
+    fg = config.hide_inactive_statusline and colors.bg or colors.blue,
+    sp = config.hide_inactive_statusline and colors.border or colors.none,
+    underline = config.hide_inactive_statusline,
+  },
+  b = {
+    bg = config.hide_inactive_statusline and colors.none or colors.bg_statusline,
+    fg = config.hide_inactive_statusline and colors.bg or colors.fg,
+    sp = config.hide_inactive_statusline and colors.border or colors.none,
+    underline = config.hide_inactive_statusline,
+    gui = "bold",
+  },
+  c = {
+    bg = config.hide_inactive_statusline and colors.none or colors.bg_statusline,
+    fg = config.hide_inactive_statusline and colors.bg or colors.fg,
+    sp = config.hide_inactive_statusline and colors.border or colors.none,
+    underline = config.hide_inactive_statusline,
+  },
 }
 
 if config.lualine_bold then
