@@ -7,7 +7,6 @@ function M.get(c, opts)
     WhichKeyGroup     = { fg = c.blue },
     WhichKeyDesc      = { fg = c.magenta },
     WhichKeySeperator = { fg = c.base01 },
-    WhichKeySeparator = { fg = c.base01 },
     WhichKeyBorder    = { fg = c.base02, bg = c.bg_float },
     WhichKeyValue     = { fg = c.violet500 },
   }
