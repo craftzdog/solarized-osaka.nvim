@@ -1,7 +1,7 @@
 local M = {
   module = "solarized-osaka",
   colorscheme = "solarized-osaka",
-  opts = { transparent = false, plugins = { all = true } },
+  opts = { plugins = { all = true } },
   globals = { vim = vim },
 }
 
