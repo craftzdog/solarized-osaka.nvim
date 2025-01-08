@@ -7,6 +7,10 @@ function M.setup()
   local opts = require("solarized-osaka.config")
   local groups = require("solarized-osaka.groups").setup(colors, opts.options)
 
+  if vim.g.loaded_lightline then
+    vim.g.lightline = { colorscheme = "solarized_osaka" }
+  end
+
   if vim.g.colors_name then
     vim.cmd("hi clear")
   end
