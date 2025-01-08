@@ -133,13 +133,6 @@ require("solarized-osaka").setup({
 })
 ```
 
-### Setting [lightline](https://github.com/itchyny/lightline.vim) colorscheme
-
-```lua
- -- vimscript requires it to be snake_case
-vim.g.lightline = { colorscheme = "solarized_osaka" }
-```
-
 ### [Borderless Telescope](https://github.com/nvim-telescope/telescope.nvim/wiki/Gallery#borderless) example
 
 ```lua
