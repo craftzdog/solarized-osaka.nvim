@@ -14,6 +14,9 @@ function M.get(c, opts)
     SnacksNotifierTitleTrace  = { fg = c.magenta500 },
     SnacksIndentScope         = { fg = c.violet700, nocombine = true },
     SnacksIndent              = { fg = c.base03, nocombine = true },
+    SnacksPickerBorder        = { fg = c.base02, bg = c.bg_float },
+    SnacksPickerTitle         = "Title",
+    SnacksPickerPreviewTitle  = { fg = c.blue, bg = c.bg_float },
   }
 end
 
