@@ -213,13 +213,13 @@ function M.generate(colors)
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>${terminal_black.b}</real>
+		<real>${bg.b}</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>${terminal_black.g}</real>
+		<real>${bg.g}</real>
 		<key>Red Component</key>
-		<real>${terminal_black.r}</real>
+		<real>${bg.r}</real>
 	</dict>
 	<key>Ansi 9 Color</key>
 	<dict>

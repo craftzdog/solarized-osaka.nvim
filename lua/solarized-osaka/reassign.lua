@@ -8,10 +8,10 @@ function M.setup(colors)
   -- colors.green1 = colors.green500
   -- colors.dark3 = colors.base02
   -- colors.fg_dark = colors.base0
-  colors.bg_dark = colors.base03
-  colors.terminal_black = colors.bg
-  colors.red1 = colors.red300
-  colors.comment = colors.base01
+  -- colors.bg_dark = colors.base03
+  -- colors.terminal_black = colors.bg
+  -- colors.red1 = colors.red300
+  -- colors.comment = colors.base01
   colors.purple = colors.violet500
 
   -- Blue variants (using different intensities for visual hierarchy)

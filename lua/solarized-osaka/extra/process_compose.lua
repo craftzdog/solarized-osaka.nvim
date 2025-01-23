@@ -22,7 +22,7 @@ style:
     fgWarning: '${yellow}'
     fgPending: '${base02}'
     fgCompleted: '${green}'
-    fgError: '${red1}'
+    fgError: '${red300}'
     headerFgColor: '${fg}'
   help:
     fgColor: '${blue300}'
@@ -33,7 +33,7 @@ style:
     fgColor: '${blue300}'
     bgColor: '${black}'
     contrastBgColor: '${bg}'
-    attentionBgColor: '${red1}'
+    attentionBgColor: '${red300}'
     buttonFgColor: '${black}'
     buttonBgColor: '${bg_highlight}'
     buttonFocusFgColor: '${black}'

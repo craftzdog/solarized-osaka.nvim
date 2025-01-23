@@ -34,7 +34,7 @@ foreground-color='${fg}'
 highlight-background-color='${fg}'
 highlight-colors-set=true
 highlight-foreground-color='${bg}'
-palette=['${terminal_black}', '${red}', '${green}', '${yellow}', '${blue}', '${magenta}', '${cyan}', '${fg}', '${terminal_black}', '${red}', '${green}', '${yellow}', '${blue}', '${magenta}', '${cyan}', '${fg}']
+palette=['${bg}', '${red}', '${green}', '${yellow}', '${blue}', '${magenta}', '${cyan}', '${fg}', '${bg}', '${red}', '${green}', '${yellow}', '${blue}', '${magenta}', '${cyan}', '${fg}']
 use-theme-colors=false
 visible-name='${_style_name}'
 ]],

@@ -69,9 +69,8 @@ module.exports =  {
       },
     },
     {
-      types: ["comment"],
       style: {
-        color: "${comment}",
+        color: "${base01}",
         fontStyle: "italic",
       },
     },

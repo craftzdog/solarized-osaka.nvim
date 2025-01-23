@@ -21,7 +21,7 @@ function M.generate(colors)
         "${magenta}",
         "${cyan}",
         "${base0}",
-        "${terminal_black}",
+        "${bg}",
         "${red}",
         "${green}",
         "${yellow}",

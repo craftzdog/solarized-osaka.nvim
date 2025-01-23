@@ -158,7 +158,7 @@ function M.generate(colors)
   --control-brand-foreground: ${blue};
   --control-brand-foreground-new: ${blue};
   --mention-foreground: ${blue};
-  --mention-background: ${terminal_black};
+  --mention-background: ${bg};
   --background-mentioned: ${yellow}19;
   --background-mentioned-hover: ${yellow}14;
   --background-message-hover: ${base03}3F;
@@ -173,11 +173,11 @@ function M.generate(colors)
   --activity-card-background: ${bg_highlight};
   --textbox-markdown-syntax: ${fg};
   --spoiler-revealed-background: ${bg_highlight};
-  --spoiler-hidden-background: ${comment};
+  --spoiler-hidden-background: ${base01};
   --android-navigation-bar-background: ${bg_highlight};
   --android-ripple: ${black}4C;
   --bg-mod-faint: ${base03};
-  --bg-mod-subtle: ${terminal_black};
+  --bg-mod-subtle: ${bg};
   --focus-primary: ${blue};
   --interactive-normal: ${fg};
   --interactive-muted: ${base02}4C;
@@ -206,7 +206,7 @@ rect[mask="url(#svg-mask-status-idle)"] {
 }
 
 rect[mask="url(#svg-mask-status-dnd)"] {
-    fill: ${red1};
+    fill: ${red300};
 }
 
 rect[mask="url(#svg-mask-status-offline)"] {
@@ -266,8 +266,8 @@ rect[mask="url(#svg-mask-status-offline)"] {
   --hljs-params: var(--text-default);
   --hljs-params-attr: var(--hljs-params);
   /* --> Comment */
-  --hljs-comment: ${comment};
-  --hljs-comment-doctag: var(--hljs-comment);
+  --hljs-base01: ${base01};
+  --hljs-base01-doctag: var(--hljs-base01);
   /* --> String */
   --hljs-string: var(--color-4);
   --hljs-string-subst: var(--color-5);
@@ -302,8 +302,8 @@ rect[mask="url(#svg-mask-status-offline)"] {
   color: var(--text-default);
 }
 
-#app-mount .hljs-comment {
-  color: var(--hljs-comment);
+#app-mount .hljs-base01 {
+  color: var(--hljs-base01);
 }
 
 #app-mount .hljs-attribute {
@@ -443,8 +443,8 @@ rect[mask="url(#svg-mask-status-offline)"] {
   color: var(--hljs-template-variable);
 }
 
-#app-mount .hljs-comment .hljs-doctag {
-  color: var(--hljs-comment-doctag);
+#app-mount .hljs-base01 .hljs-doctag {
+  color: var(--hljs-base01-doctag);
 }
 
 #app-mount .hljs-params .hljs-attr {

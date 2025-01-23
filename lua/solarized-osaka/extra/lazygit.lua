@@ -30,7 +30,7 @@ gui:
     markedBaseCommitBgColor:
       - "${yellow}"
     unstagedChangesColor:
-      - "${red1}"
+      - "${red300}"
     defaultFgColor:
       - "${fg}"
 ]],

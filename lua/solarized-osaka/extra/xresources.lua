@@ -20,7 +20,7 @@ function M.generate(colors)
 *color6: ${cyan}
 *color7: ${base0}
 
-*color8: ${terminal_black}
+*color8: ${bg}
 *color9: ${red}
 *color10: ${green}
 *color11: ${yellow}

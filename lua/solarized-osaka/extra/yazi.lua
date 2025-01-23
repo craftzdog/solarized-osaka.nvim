@@ -35,7 +35,7 @@ tab_width    = 1
 
 # Count
 count_copied   = { fg = "${fg}", bg = "${green2}" }
-count_cut      = { fg = "${fg}", bg = "${red1}" }
+count_cut      = { fg = "${fg}", bg = "${red300}" }
 count_selected = { fg = "${fg}", bg = "${blue700}" }
 
 # Border
@@ -67,7 +67,7 @@ perm_type  = { fg = "${blue}" }
 perm_read  = { fg = "${yellow}" }
 perm_write = { fg = "${red}" }
 perm_exec  = { fg = "${green}" }
-perm_sep   = { fg = "${terminal_black}" }
+perm_sep   = { fg = "${bg}" }
 
 [pick]
 border   = { fg = "${border_highlight}" }
@@ -105,7 +105,7 @@ cand            = { fg = "${cyan}" }
 rest            = { fg = "${blue}" }
 desc            = { fg = "${magenta}" }
 separator       = " ➜ "
-separator_style = { fg = "${comment}" }
+separator_style = { fg = "${base01}" }
 
 # Confirm
 [confirm]

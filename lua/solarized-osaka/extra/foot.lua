@@ -32,7 +32,7 @@ regular5=${magenta}
 regular6=${cyan}
 regular7=${base0}
 
-bright0=${terminal_black}
+bright0=${bg}
 bright1=${red}
 bright2=${green}
 bright3=${yellow}
@@ -42,7 +42,7 @@ bright6=${cyan}
 bright7=${fg}
 
 16=${orange}
-17=${red1}]],
+17=${red300}]],
     footColors
   )
 

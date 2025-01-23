@@ -12,7 +12,7 @@ function M.generate(colors)
     "background": "${bg}",
     "black": "${black}",
     "blue": "${blue}",
-    "brightBlack": "${terminal_black}",
+    "brightBlack": "${bg}",
     "brightBlue": "${blue}",
     "brightCyan": "${cyan}",
     "brightGreen": "${green}",

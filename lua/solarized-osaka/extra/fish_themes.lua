@@ -24,18 +24,18 @@ function M.generate(colors)
     fish_color_end ${orange}
     fish_color_error ${red}
     fish_color_param ${purple}
-    fish_color_comment ${comment}
+    fish_color_comment ${base01}
     fish_color_selection --background=${blue700}
     fish_color_search_match --background=${blue700}
     fish_color_operator ${green}
     fish_color_escape ${magenta}
-    fish_color_autosuggestion ${comment}
+    fish_color_autosuggestion ${base01}
 
     # Completion Pager Colors
-    fish_pager_color_progress ${comment}
+    fish_pager_color_progress ${base01}
     fish_pager_color_prefix ${cyan}
     fish_pager_color_completion ${fg}
-    fish_pager_color_description ${comment}
+    fish_pager_color_description ${base01}
     fish_pager_color_selected_background --background=${blue700}
   ]],
     fishColors

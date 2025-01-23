@@ -101,7 +101,7 @@ quote_3.fg=${cyan}
 quote_3.dim=true
 quote_4.fg=${blue}
 quote_4.dim=true
-quote_x.fg=${comment}
+quote_x.fg=${base01}
 quote_x.dim=true
 
 ]],
