@@ -21,7 +21,7 @@ function M.generate(colors)
     set -l orange ${orange}
     set -l yellow ${yellow}
     set -l green ${green}
-    set -l purple ${purple}
+    set -l purple ${violet500}
     set -l cyan ${cyan}
     set -l pink ${magenta}
 

@@ -20,7 +20,7 @@ preview_hovered = { bg = "${bg_highlight}" }
 
 # Find
 find_keyword  = { fg = "${base03}", bg = "${orange}", bold = true }
-find_position = { fg = "${blue2}", bg = "${bg_search}", bold = true }
+find_position = { fg = "${blue300}", bg = "${bg_search}", bold = true }
 
 # Marker
 marker_copied   = { fg = "${green500}", bg = "${green500}" }
@@ -49,8 +49,8 @@ normal_alt  = { fg = "${blue}", bg = "${base01}" }
 select_main = { fg = "${black}", bg = "${magenta}", bold = true }
 select_alt  = { fg = "${magenta}", bg = "${base01}" }
 
-unset_main  = { fg = "${black}", bg = "${purple}", bold = true }
-unset_alt   = { fg = "${purple}", bg = "${base01}" }
+unset_main  = { fg = "${black}", bg = "${violet500}", bold = true }
+unset_alt   = { fg = "${violet500}", bg = "${base01}" }
 
 [status]
 separator_open    = ""
@@ -76,14 +76,14 @@ inactive = { fg = "${fg}" }
 
 # Input
 [input]
-border   = { fg = "${blue2}" }
-title    = { fg = "${blue2}" }
-value    = { fg = "${purple}" }
+border   = { fg = "${blue300}" }
+title    = { fg = "${blue300}" }
+value    = { fg = "${violet500}" }
 selected = { bg = "${blue700}" }
 
 # Completion
 [completion]
-border   = { fg = "${blue2}" }
+border   = { fg = "${blue300}" }
 active   = { fg = "${fg}", bg = "${blue700}" }
 inactive = { fg = "${fg}" }
 
@@ -109,7 +109,7 @@ separator_style = { fg = "${base01}" }
 
 # Confirm
 [confirm]
-border  = { fg = "${blue2}" }
+border  = { fg = "${blue300}" }
 title   = { fg = "${border_highlight}" }
 content = {}
 list    = {}

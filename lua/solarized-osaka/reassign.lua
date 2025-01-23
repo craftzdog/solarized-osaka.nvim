@@ -12,9 +12,8 @@ function M.setup(colors)
   -- colors.terminal_black = colors.bg
   -- colors.red1 = colors.red300
   -- colors.comment = colors.base01
-  colors.purple = colors.violet500
+  -- colors.purple = colors.violet500
 
-  -- Blue variants (using different intensities for visual hierarchy)
   colors.blue2 = colors.blue300 -- Lighter blue for secondary elements
   colors.blue5 = colors.blue700 -- Darker blue for emphasis
   colors.blue6 = colors.blue900 -- Deepest blue for strong emphasis

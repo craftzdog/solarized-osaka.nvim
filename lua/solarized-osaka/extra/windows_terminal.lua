@@ -16,7 +16,7 @@ function M.generate(colors)
     "brightBlue": "${blue}",
     "brightCyan": "${cyan}",
     "brightGreen": "${green}",
-    "brightPurple": "${purple}",
+    "brightPurple": "${violet500}",
     "brightRed": "${red}",
     "brightWhite": "${fg}",
     "brightYellow": "${yellow}",

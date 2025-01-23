@@ -88,7 +88,7 @@ function M.generate(colors)
   --white-500: ${fg};
   --guild-boosting-pink: ${magenta};
   --premium-perk-yellow: ${warning};
-  --premium-perk-purple: ${purple};
+  --premium-perk-purple: ${violet500};
   --premium-perk-dark-blue: ${blue};
   --premium-perk-light-blue: ${blue1};
   --premium-perk-blue: ${blue};
@@ -185,7 +185,7 @@ function M.generate(colors)
   --interactive-active: ${fg};
   --search-popout-option-non-text-color: ${base0};
   --__spoiler-background-color--hidden: ${blue7};
-  --__spoiler-warning-background-color: ${purple};
+  --__spoiler-warning-background-color: ${violet500};
 }
 
 div[class*="autocomplete_"] {
@@ -225,7 +225,7 @@ rect[mask="url(#svg-mask-status-offline)"] {
   --color-4: ${green};
   --color-5: ${green500};
   --color-6: ${blue6};
-  --color-7: ${blue2};
+  --color-7: ${blue300};
   --color-8: ${cyan};
   --color-9: ${blue};
   --color-10: ${magenta};

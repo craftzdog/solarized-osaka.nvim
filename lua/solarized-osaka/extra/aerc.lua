@@ -89,7 +89,7 @@ default.selected.bg=${blue700}
 [viewer]
 url.underline=true
 url.fg=${dark5}
-header.fg=${purple}
+header.fg=${violet500}
 signature.fg=${magenta}
 diff_add.fg=${diff.add}
 diff_del.fg=${diff.delete}

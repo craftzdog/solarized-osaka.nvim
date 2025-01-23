@@ -23,7 +23,7 @@ function M.generate(colors)
     fish_color_redirection ${fg}
     fish_color_end ${orange}
     fish_color_error ${red}
-    fish_color_param ${purple}
+    fish_color_param ${violet500}
     fish_color_comment ${base01}
     fish_color_selection --background=${blue700}
     fish_color_search_match --background=${blue700}
