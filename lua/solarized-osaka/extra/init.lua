@@ -2,35 +2,48 @@ local M = {}
 
 -- Map of plugin name to plugin extension
 --- @type table<string, {ext:string, url:string, label:string}>
+-- stylua: ignore
 M.extras = {
-  kitty = { ext = "conf", url = "https://sw.kovidgoyal.net/kitty/conf.html", label = "Kitty" },
-  fish = { ext = "fish", url = "https://fishshell.com/docs/current/index.html", label = "Fish" },
-  fish_themes = {
-    ext = "theme",
-    url = "https://fishshell.com/docs/current/interactive.html#syntax-highlighting",
-    label = "Fish Themes",
-  },
-  alacritty = { ext = "yml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
-  wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
-  tmux = { ext = "tmux", url = "https://github.com/tmux/tmux/wiki", label = "Tmux" },
-  xresources = { ext = "Xresources", url = "https://wiki.archlinux.org/title/X_resources", label = "Xresources" },
-  xfceterm = { ext = "theme", url = "https://docs.xfce.org/apps/terminal/advanced", label = "Xfce Terminal" },
-  foot = { ext = "ini", url = "https://codeberg.org/dnkl/foot", label = "Foot" },
-  tilix = { ext = "json", url = "https://github.com/gnunn1/tilix", label = "Tilix" },
-  -- iterm = { ext = "itermcolors", url = "https://iterm2.com/", label = "iTerm" },
-  lua = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
-  sublime = { ext = "tmTheme", url = "https://www.sublimetext.com/docs/themes", label = "Sublime Text" },
-  delta = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
-  terminator = {
-    ext = "conf",
-    url = "https://gnome-terminator.readthedocs.io/en/latest/config.html",
-    label = "Terminator",
-  },
-  prism = { ext = "js", url = "https://prismjs.com", label = "Prism" },
-  windows_terminal = { ext = "json", url = "https://aka.ms/terminal-documentation", label = "Windows Terminal" },
-  zathura = { ext = "zathurarc", url = "https://pwmt.org/projects/zathura/", label = "Zathura" },
-  dunst = { ext = "dunstrc", url = "https://dunst-project.org/", label = "Dunst" },
-  gitui = { ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI" },
+  aerc             = { ext = "ini", url = "https://git.sr.ht/~rjarry/aerc/", label = "Aerc" },
+  -- alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" }, delta            = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
+  -- discord          = { ext = "css", url ="https://betterdiscord.app/", label = "(Better-)Discord"},
+  -- dunst            = { ext = "dunstrc", url = "https://dunst-project.org/", label = "Dunst" },
+  -- fish             = { ext = "fish", url = "https://fishshell.com/docs/current/index.html", label = "Fish" },
+  -- fish_themes      = { ext = "theme", url = "https://fishshell.com/docs/current/interactive.html#syntax-highlighting", label = "Fish Themes" },
+  -- foot             = { ext = "ini", url = "https://codeberg.org/dnkl/foot", label = "Foot" },
+  -- fuzzel           = { ext = "ini", url = "https://codeberg.org/dnkl/fuzzel", label = "Fuzzel" },
+  -- fzf              = { ext = "sh", url = "https://github.com/junegunn/fzf", label = "Fzf" },
+  -- ghostty          = { ext = "", url = "https://github.com/ghostty-org/ghostty", label = "Ghostty" },
+  -- gitui            = { ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI" },
+  -- gnome_terminal   = { ext = "dconf", url = "https://gitlab.gnome.org/GNOME/gnome-terminal", label = "GNOME Terminal" },
+  --BUG: Some colors not being assigned.
+  -- helix            = { ext = "toml", url = "https://helix-editor.com/", label = "Helix" },
+  -- BUG: This is not working
+  -- iterm            = { ext = "itermcolors", url = "https://iterm2.com/", label = "iTerm" },
+  -- kitty            = { ext = "conf", url = "https://sw.kovidgoyal.net/kitty/conf.html", label = "Kitty" },
+  -- lazygit          = { ext = "yml", url = "https://github.com/jesseduffield/lazygit", label = "Lazygit" },
+  -- lua              = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
+  -- prism            = { ext = "js", url = "https://prismjs.com", label = "Prism" },
+  -- process_compose  = { ext = "yaml", url = "https://f1bonacc1.github.io/process-compose/", label = "process-compose" },
+  -- slack            = { ext = "txt", url = "https://slack.com", label = "Slack" },
+  -- sublime          = { ext = "tmTheme", url = "https://www.sublimetext.com/docs/themes", label = "Sublime Text" },
+  -- spotify_player   = { ext = "toml", url = "https://github.com/aome510/spotify-player", label = "Spotify Player" },
+  -- terminator       = { ext = "conf", url = "https://gnome-terminator.readthedocs.io/en/latest/config.html", label = "Terminator" },
+  -- BUG: needs terminal colors to work
+  -- termux           = { ext = "properties", url = "https://termux.dev/", label = "Termux" },
+  --
+  -- tilix            = { ext = "json", url = "https://github.com/gnunn1/tilix", label = "Tilix" },
+  tmux             = { ext = "tmux", url = "https://github.com/tmux/tmux/wiki", label = "Tmux" },
+  -- wezterm          = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
+  -- windows_terminal = { ext = "json", url = "https://aka.ms/terminal-documentation", label = "Windows Terminal" },
+  -- xfceterm         = { ext = "theme", url = "https://docs.xfce.org/apps/terminal/advanced", label = "Xfce Terminal" },
+  -- xresources       = { ext = "Xresources", url = "https://wiki.archlinux.org/title/X_resources", label = "Xresources" },
+  -- yazi             = { ext = "toml", url = "https://github.com/sxyazi/yazi", label = "Yazi" },
+  -- BUG: not working
+  -- vim              = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors", sep = "-" },
+  -- vimium           = { ext = "css", url = "https://vimium.github.io/", label = "Vimium" },
+  -- zathura          = { ext = "zathurarc", url = "https://pwmt.org/projects/zathura/", label = "Zathura" },
+  -- zellij           = { ext = "kdl", url = "https://zellij.dev/", label = "Zellij" },
 }
 
 local function write(str, fileName)
@@ -80,15 +93,15 @@ function M.setup()
   local config = require("solarized-osaka.config")
 
   local styles = {
-    night = "",
-    day = " Day",
+    dark = "",
+    day = "Day",
   }
 
   for extra, info in pairs(M.extras) do
     package.loaded["solarized-osaka.extra." .. extra] = nil
     local plugin = require("solarized-osaka.extra." .. extra)
     for style, style_name in pairs(styles) do
-      vim.o.background = style == "night" and "dark" or "light"
+      vim.o.background = style == "dark" and "dark" or "light"
       config.setup({ style = style, use_background = "auto" })
       local colors = require("solarized-osaka.colors").setup({ transform = true })
       local fname = extra .. "/solarized_osaka_" .. style .. "." .. info.ext

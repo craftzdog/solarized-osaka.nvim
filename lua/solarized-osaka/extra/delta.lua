@@ -17,7 +17,7 @@ function M.generate(colors)
   plus-emph-style               = syntax "${delta.add}"
   plus-empty-line-marker-style  = syntax "${diff.add}"
   line-numbers-plus-style       = "${gitSigns.add}"
-  line-numbers-zero-style       = "${fg_gutter}"
+  line-numbers-zero-style       = "${base01}"
 ]],
     colors
   )
