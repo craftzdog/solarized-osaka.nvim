@@ -18,7 +18,7 @@ function M.generate(colors)
 *color4: ${blue}
 *color5: ${magenta}
 *color6: ${cyan}
-*color7: ${fg_dark}
+*color7: ${base0}
 
 *color8: ${terminal_black}
 *color9: ${red}

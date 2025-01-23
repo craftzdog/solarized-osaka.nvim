@@ -2,7 +2,7 @@ local util = require("solarized-osaka.util")
 
 local M = {}
 -- TODO:Assign colors
---bg_dark1
+--base031
 --blue0
 --dark5
 --blue1
@@ -14,9 +14,9 @@ function M.generate(colors)
 .theme-light,
 .theme-dark {
   --header-primary: ${fg};
-  --header-secondary: ${fg_dark};
+  --header-secondary: ${base0};
   --text-normal: ${fg};
-  --text-muted: ${fg_dark};
+  --text-muted: ${base0};
   --text-link: ${blue};
   --text-link-low-saturation: ${blue5};
   --text-positive: ${hint};
@@ -25,24 +25,24 @@ function M.generate(colors)
   --text-brand: ${blue};
   --background-primary: ${bg};
   --bg-base-primary: ${bg};
-  --background-secondary: ${bg_dark};
-  --background-secondary-alt: ${bg_dark};
+  --background-secondary: ${base03};
+  --background-secondary-alt: ${base03};
   --background-tertiary: ${bg_dark1};
   --background-accent: ${blue0};
   --background-floating: ${bg_float};
-  --background-nested-floating: ${bg_dark};
+  --background-nested-floating: ${base03};
   --background-mobile-primary: ${bg};
-  --background-mobile-secondary: ${bg_dark};
-  --bg-base-secondary: ${bg_dark};
-  --bg-surface-raised: ${bg_dark};
+  --background-mobile-secondary: ${base03};
+  --bg-base-secondary: ${base03};
+  --bg-surface-raised: ${base03};
   --home-background: ${bg};
   --chat-background: ${bg};
   --chat-border: ${bg_highlight};
   --chat-input-container-background: ${bg};
-  --background-modifier-hover: ${dark3}26;
-  --background-modifier-selected: ${dark3}32;
-  --background-modifier-accent: ${dark3}42;
-  --background-modifier-active: ${dark3}2B;
+  --background-modifier-hover: ${base02}26;
+  --background-modifier-selected: ${base02}32;
+  --background-modifier-accent: ${base02}42;
+  --background-modifier-active: ${base02}2B;
   --info-positive-background: ${green}26;
   --info-positive-foreground: ${hint};
   --info-positive-text: ${fg};
@@ -101,10 +101,10 @@ function M.generate(colors)
   --button-danger-background-active: ${blue5};
   --button-danger-background-disabled: ${red};
   --button-positive-background: ${hint};
-  --button-positive-background-hover: ${green1};
+  --button-positive-background-hover: ${green500};
   --button-positive-background-active: ${green2};
   --button-positive-background-disabled: ${hint};
-  --button-secondary-background: ${dark3};
+  --button-secondary-background: ${base02};
   --button-secondary-background-hover: ${base01};
   --button-secondary-background-active: ${base01};
   --button-secondary-background-disabled: ${dark5};
@@ -123,7 +123,7 @@ function M.generate(colors)
   --button-outline-positive-background-hover: ${green};
   --button-outline-positive-text-hover: ${bg};
   --button-outline-positive-border-hover: ${green};
-  --button-outline-positive-background-active: ${green1};
+  --button-outline-positive-background-active: ${green500};
   --button-outline-positive-text-active: ${bg};
   --button-outline-positive-border-active: ${green};
   --button-outline-brand-text: ${fg};
@@ -136,14 +136,14 @@ function M.generate(colors)
   --button-outline-brand-text-active: ${bg};
   --button-outline-brand-border-active: ${blue1};
   --button-outline-primary-text: ${fg};
-  --button-outline-primary-border: ${dark3};
+  --button-outline-primary-border: ${base02};
   --button-outline-primary-background: transparent;
-  --button-outline-primary-background-hover: ${dark3};
+  --button-outline-primary-background-hover: ${base02};
   --button-outline-primary-text-hover: ${bg};
-  --button-outline-primary-border-hover: ${dark3};
-  --button-outline-primary-background-active: ${dark3};
+  --button-outline-primary-border-hover: ${base02};
+  --button-outline-primary-background-active: ${base02};
   --button-outline-primary-text-active: ${bg};
-  --button-outline-primary-border-active: ${dark3};
+  --button-outline-primary-border-active: ${base02};
   --modal-background: ${bg};
   --modal-footer-background: ${bg_highlight};
   --scrollbar-thin-thumb: ${blue};
@@ -161,29 +161,29 @@ function M.generate(colors)
   --mention-background: ${terminal_black};
   --background-mentioned: ${yellow}19;
   --background-mentioned-hover: ${yellow}14;
-  --background-message-hover: ${bg_dark}3F;
+  --background-message-hover: ${base03}3F;
   --background-message-automod: ${magenta}0C;
   --background-message-automod-hover: ${magenta}19;
   --background-message-highlight: ${blue}14;
   --background-message-highlight-hover: ${blue}0F;
-  --channels-default: ${fg_dark};
+  --channels-default: ${base0};
   --channel-icon: ${blue}99;
-  --channel-text-area-placeholder: ${dark3}7F;
-  --channeltextarea-background: ${bg_dark};
+  --channel-text-area-placeholder: ${base02}7F;
+  --channeltextarea-background: ${base03};
   --activity-card-background: ${bg_highlight};
   --textbox-markdown-syntax: ${fg};
   --spoiler-revealed-background: ${bg_highlight};
   --spoiler-hidden-background: ${comment};
   --android-navigation-bar-background: ${bg_highlight};
   --android-ripple: ${black}4C;
-  --bg-mod-faint: ${bg_dark};
+  --bg-mod-faint: ${base03};
   --bg-mod-subtle: ${terminal_black};
   --focus-primary: ${blue};
   --interactive-normal: ${fg};
-  --interactive-muted: ${dark3}4C;
+  --interactive-muted: ${base02}4C;
   --interactive-hover: ${fg};
   --interactive-active: ${fg};
-  --search-popout-option-non-text-color: ${fg_dark};
+  --search-popout-option-non-text-color: ${base0};
   --__spoiler-background-color--hidden: ${blue7};
   --__spoiler-warning-background-color: ${purple};
 }
@@ -218,12 +218,12 @@ rect[mask="url(#svg-mask-status-offline)"] {
 :root {
   /* ---- Default Colors -- */
   --background: var(--background-secondary);
-  --text-default: ${fg_dark};
+  --text-default: ${base0};
   --color-1: ${red};
   --color-2: ${orange};
   --color-3: ${yellow};
   --color-4: ${green};
-  --color-5: ${green1};
+  --color-5: ${green500};
   --color-6: ${blue6};
   --color-7: ${blue2};
   --color-8: ${cyan};

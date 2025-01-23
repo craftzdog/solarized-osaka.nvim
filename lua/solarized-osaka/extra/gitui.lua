@@ -33,7 +33,7 @@ function M.generate(colors)
   disabled_fg: ${comment}
   diff_line_add: ${green}
   diff_line_delete: ${red}
-  diff_file_added: ${green1}
+  diff_file_added: ${green500}
   diff_file_removed: ${red1}
   diff_file_moved: ${magenta2}
   diff_file_modified: ${yellow}

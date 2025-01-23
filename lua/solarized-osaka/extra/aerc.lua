@@ -33,23 +33,23 @@ tab.selected.fg=${black}
 tab.selected.bg=${blue}
 
 statusline_default.fg=${fg}
-statusline_default.bg=${bg_dark}
+statusline_default.bg=${base03}
 statusline_error.fg=${error}
-statusline_success.fg=${green1}
+statusline_success.fg=${green500}
 
 *error.bold=true
 *error.fg=${error}
 *warning.fg=${warning}
-*success.fg=${green1}
+*success.fg=${green500}
 
 dirlist_*.bg=${bg}
 dirlist_*.fg=${fg}
-dirlist_*.selected.bg=${bg_visual}
+dirlist_*.selected.bg=${blue700}
 dirlist_*.selected.fg=${fg}
 
 msglist_*.bg=${bg}
 msglist_*.fg=${fg}
-msglist_*.selected.bg=${bg_visual}
+msglist_*.selected.bg=${blue700}
 #msglist_*.selected.fg=${fg}
 msglist_unread.bold=true
 msglist_unread.fg=${blue}
@@ -77,14 +77,14 @@ spinner.bg=${bg}
 spinner.fg=${fg}
 
 selector_focused.bold=false
-selector_focused.bg=${bg_visual}
+selector_focused.bg=${blue700}
 selector_focused.fg=${fg}
 selector_chooser.bold=false
-selector_chooser.bg=${bg_visual}
+selector_chooser.bg=${blue700}
 selector_chooser.fg=${fg}
 default.selected.bold=false
 default.selected.fg=${fg}
-default.selected.bg=${bg_visual}
+default.selected.bg=${blue700}
 
 [viewer]
 url.underline=true

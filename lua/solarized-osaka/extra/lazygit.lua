@@ -20,7 +20,7 @@ gui:
     optionsTextColor:
       - "${blue}"
     selectedLineBgColor:
-      - "${bg_visual}"
+      - "${blue700}"
     cherryPickedCommitFgColor:
       - "${blue}"
     cherryPickedCommitBgColor:

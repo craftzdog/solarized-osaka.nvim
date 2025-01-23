@@ -12,18 +12,18 @@ function M.generate(colors)
 # NOTE: can combined with tmTheme (sublime colorshceme file) for preview code highlight
 # syntect_theme = "path/to/tmTheme"
 
-cwd = { fg = "${fg_dark}", italic = true }
+cwd = { fg = "${base0}", italic = true }
 
 # Hovered
 hovered         = { bg = "${bg_highlight}" }
 preview_hovered = { bg = "${bg_highlight}" }
 
 # Find
-find_keyword  = { fg = "${bg_dark}", bg = "${orange}", bold = true }
+find_keyword  = { fg = "${base03}", bg = "${orange}", bold = true }
 find_position = { fg = "${blue2}", bg = "${bg_search}", bold = true }
 
 # Marker
-marker_copied   = { fg = "${green1}", bg = "${green1}" }
+marker_copied   = { fg = "${green500}", bg = "${green500}" }
 marker_cut      = { fg = "${red}", bg = "${red}" }
 marker_marked   = { fg = "${magenta}", bg = "${magenta}" }
 marker_selected = { fg = "${blue}", bg = "${blue}" }
@@ -58,7 +58,7 @@ separator_close   = ""
 # separator_style = { fg = "${base01}", bg = "${base01}" }
 
 # Progress
-progress_label  = { fg = "${fg_dark}", bold = true }
+progress_label  = { fg = "${base0}", bold = true }
 progress_normal = { fg = "${bg}" }
 progress_error  = { fg = "${red}" }
 
@@ -71,7 +71,7 @@ perm_sep   = { fg = "${terminal_black}" }
 
 [pick]
 border   = { fg = "${border_highlight}" }
-active   = { fg = "${fg}",  bg = "${bg_visual}" }
+active   = { fg = "${fg}",  bg = "${blue700}" }
 inactive = { fg = "${fg}" }
 
 # Input
@@ -79,12 +79,12 @@ inactive = { fg = "${fg}" }
 border   = { fg = "${blue2}" }
 title    = { fg = "${blue2}" }
 value    = { fg = "${purple}" }
-selected = { bg = "${bg_visual}" }
+selected = { bg = "${blue700}" }
 
 # Completion
 [completion]
 border   = { fg = "${blue2}" }
-active   = { fg = "${fg}", bg = "${bg_visual}" }
+active   = { fg = "${fg}", bg = "${blue700}" }
 inactive = { fg = "${fg}" }
 
 icon_file    = ""
@@ -95,12 +95,12 @@ icon_command = ""
 [tasks]
 border  = { fg = "${border_highlight}" }
 title   = { fg = "${border_highlight}" }
-hovered = { fg = "${fg}", bg="${bg_visual}" }
+hovered = { fg = "${fg}", bg="${blue700}" }
 
 # Which
 [which]
 cols            = 3
-mask            = { bg = "${bg_dark}" }
+mask            = { bg = "${base03}" }
 cand            = { fg = "${cyan}" }
 rest            = { fg = "${blue}" }
 desc            = { fg = "${magenta}" }
@@ -113,7 +113,7 @@ border  = { fg = "${blue2}" }
 title   = { fg = "${border_highlight}" }
 content = {}
 list    = {}
-btn_yes = { bg = "${bg_visual}" }
+btn_yes = { bg = "${blue700}" }
 btn_no  = {}
 btn_labels = [ "  [Y]es  ", "  (N)o  " ]
 

@@ -9,8 +9,8 @@ style:
   name: ${_colors_name}
   body:
     fgColor: '${fg}'
-    bgColor: '${bg_dark}'
-    secondaryTextColor: '${fg_dark}'
+    bgColor: '${base03}'
+    secondaryTextColor: '${base0}'
     tertiaryTextColor: '${base02}'
     borderColor: '${base01}'
   stat_table:
@@ -20,7 +20,7 @@ style:
   proc_table:
     fgColor: '${blue}'
     fgWarning: '${yellow}'
-    fgPending: '${dark3}'
+    fgPending: '${base02}'
     fgCompleted: '${green}'
     fgError: '${red1}'
     headerFgColor: '${fg}'

@@ -23,7 +23,7 @@ themes {
         blue "${blue}"
         magenta "${magenta}"
         cyan "${cyan}"
-        white "${fg_dark}"
+        white "${base0}"
         orange "${orange}"
     }
 }

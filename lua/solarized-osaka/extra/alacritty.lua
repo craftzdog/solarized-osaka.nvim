@@ -29,7 +29,7 @@ colors:
     blue:    '${blue}'
     magenta: '${magenta}'
     cyan:    '${cyan}'
-    white:   '${fg_dark}'
+    white:   '${base0}'
 
   # Bright colors
   bright:

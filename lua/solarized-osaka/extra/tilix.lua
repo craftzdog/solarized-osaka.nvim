@@ -20,7 +20,7 @@ function M.generate(colors)
         "${blue}",
         "${magenta}",
         "${cyan}",
-        "${fg_dark}",
+        "${base0}",
         "${terminal_black}",
         "${red}",
         "${green}",

@@ -25,8 +25,8 @@ function M.generate(colors)
     fish_color_error ${red}
     fish_color_param ${purple}
     fish_color_comment ${comment}
-    fish_color_selection --background=${bg_visual}
-    fish_color_search_match --background=${bg_visual}
+    fish_color_selection --background=${blue700}
+    fish_color_search_match --background=${blue700}
     fish_color_operator ${green}
     fish_color_escape ${magenta}
     fish_color_autosuggestion ${comment}
@@ -36,7 +36,7 @@ function M.generate(colors)
     fish_pager_color_prefix ${cyan}
     fish_pager_color_completion ${fg}
     fish_pager_color_description ${comment}
-    fish_pager_color_selected_background --background=${bg_visual}
+    fish_pager_color_selected_background --background=${blue700}
   ]],
     fishColors
   )

@@ -15,7 +15,7 @@ function M.generate(colors)
     [[
     # solarized-osaka Color Palette
     set -l foreground ${fg}
-    set -l selection ${bg_visual}
+    set -l selection ${blue700}
     set -l comment ${comment}
     set -l red ${red}
     set -l orange ${orange}

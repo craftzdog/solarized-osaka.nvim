@@ -27,8 +27,8 @@ function M.generate(colors)
     "name": "${_style_name}",
     "purple": "${magenta}",
     "red": "${red}",
-    "selectionBackground": "${bg_visual}",
-    "white": "${fg_dark}",
+    "selectionBackground": "${blue700}",
+    "white": "${base0}",
     "yellow": "${yellow}"
 }
 ]],

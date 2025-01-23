@@ -2,12 +2,12 @@ local M = {}
 
 function M.setup(colors)
   -- Additional color assignments
-  colors.fg_sidebar = colors.base0
-  colors.fg_gutter = colors.base01
-  colors.bg_visual = colors.blue500
-  colors.green1 = colors.green500
-  colors.dark3 = colors.base02
-  colors.fg_dark = colors.base0
+  -- colors.fg_sidebar = colors.base0
+  -- colors.fg_gutter = colors.base01
+  -- colors.bg_visual = colors.blue700
+  -- colors.green1 = colors.green500
+  -- colors.dark3 = colors.base02
+  -- colors.fg_dark = colors.base0
   colors.bg_dark = colors.base03
   colors.terminal_black = colors.bg
   colors.red1 = colors.red300

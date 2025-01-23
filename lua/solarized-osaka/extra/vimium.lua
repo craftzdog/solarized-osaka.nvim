@@ -13,7 +13,7 @@ function M.generate(colors)
   --vimium-blue: ${blue};
   --vimium-green: ${green};
   --vimium-fg: ${fg};
-  --vimium-fg-dark: ${fg_dark};
+  --vimium-fg-dark: ${base0};
   --vimium-border: ${border};
   --vimium-border-highlight: ${border_highlight};
   --vimium-bg: ${bg};

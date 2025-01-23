@@ -11,10 +11,10 @@ Name=solarized-osaka Colors
 ColorBackground=${bg}
 ColorForeground=${fg}
 
-ColorSelectionBackground=${bg_visual}
+ColorSelectionBackground=${blue700}
 ColorSelection=${fg}
 
-ColorPalette=${black};${red};${green};${yellow};${blue};${magenta};${cyan};${fg_dark};${terminal_black};${red};${green};${yellow};${blue};${magenta};${cyan};${fg}
+ColorPalette=${black};${red};${green};${yellow};${blue};${magenta};${cyan};${base0};${terminal_black};${red};${green};${yellow};${blue};${magenta};${cyan};${fg}
 ]],
     colors
   )
