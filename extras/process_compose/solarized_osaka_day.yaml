@@ -1,0 +1,36 @@
+style:
+  name: ${_colors_name}
+  body:
+    fgColor: '#566162'
+    bgColor: '#87ddff'
+    secondaryTextColor: '#737d7e'
+    tertiaryTextColor: '#41d7fc'
+    borderColor: '#6e8992'
+  stat_table:
+    keyFgColor: '#7e5d00'
+    valueFgColor: '#566162'
+    logoColor: '#7e5d00'
+  proc_table:
+    fgColor: '#1c6da7'
+    fgWarning: '#7e5d00'
+    fgPending: '#41d7fc'
+    fgCompleted: '#576600'
+    fgError: '#be2420'
+    headerFgColor: '#566162'
+  help:
+    fgColor: '#2f84be'
+    keyColor: '#566162'
+    hlColor: '#576600'
+    categoryFgColor: '#2c96e2'
+  dialog:
+    fgColor: '#2f84be'
+    bgColor: '#e2f8ff'
+    contrastBgColor: '#d9f5ff'
+    attentionBgColor: '#be2420'
+    buttonFgColor: '#e2f8ff'
+    buttonBgColor: '#87ddff'
+    buttonFocusFgColor: '#e2f8ff'
+    buttonFocusBgColor: '#1c6da7'
+    labelFgColor: '#7e5d00'
+    fieldFgColor: '#e2f8ff'
+    fieldBgColor: '#2c96e2'

@@ -1,0 +1,34 @@
+# solarized-osaka Alacritty Colors
+colors:
+  # Default colors
+  primary:
+    background: '0x001419'
+    foreground: '0x839395'
+
+  # Normal colors
+  normal:
+    black:   '0x001014'
+    red:     '0xdb302d'
+    green:   '0x849900'
+    yellow:  '0xb28500'
+    blue:    '0x268bd3'
+    magenta: '0xd23681'
+    cyan:    '0x29a298'
+    white:   '0x9eabac'
+
+  # Bright colors
+  bright:
+    black:   '0x001419'
+    red:     '0xdb302d'
+    green:   '0x849900'
+    yellow:  '0xb28500'
+    blue:    '0x268bd3'
+    magenta: '0xd23681'
+    cyan:    '0x29a298'
+    white:   '0x839395'
+
+  indexed_colors:
+    - { index: 16, color: '0xc94c16' }
+    - { index: 17, color: '0xf55350' }
+    
+  

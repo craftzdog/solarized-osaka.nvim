@@ -1,0 +1,25 @@
+    # solarized osaka
+
+    # Syntax Highlighting Colors
+    fish_color_normal 566162
+    fish_color_command 279a91
+    fish_color_keyword d73884
+    fish_color_quote 7e5d00
+    fish_color_redirection 566162
+    fish_color_end d14f17
+    fish_color_error e73330
+    fish_color_param 696dc2
+    fish_color_comment 6e8992
+    fish_color_selection --background=2c96e2
+    fish_color_search_match --background=2c96e2
+    fish_color_operator 576600
+    fish_color_escape d73884
+    fish_color_autosuggestion 6e8992
+
+    # Completion Pager Colors
+    fish_pager_color_progress 6e8992
+    fish_pager_color_prefix 279a91
+    fish_pager_color_completion 566162
+    fish_pager_color_description 6e8992
+    fish_pager_color_selected_background --background=2c96e2
+  
