@@ -26,7 +26,7 @@ bright_green = "${green500}"
 bright_yellow = "${orange}"
 bright_blue = "${blue300}"
 bright_magenta = "${magenta300}"
-bright_cyan = "${blue5}"
+bright_cyan = "${blue700}"
 bright_white = "${fg}"
 ]=]
 

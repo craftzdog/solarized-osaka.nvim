@@ -230,7 +230,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${blue700}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -417,7 +417,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${green2}</string>
+				<string>${green300}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -749,7 +749,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${blue700}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -782,7 +782,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${git.add}</string>
+				<string>${green500}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -793,7 +793,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${git.delete}</string>
+				<string>${red500}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -804,7 +804,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${git.change}</string>
+				<string>${green300}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -815,7 +815,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue6}</string>
+				<string>${blue900}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -859,7 +859,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${blue700}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -881,7 +881,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${blue700}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1092,7 +1092,7 @@ M.template = [[
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${blue700}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1251,7 +1251,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${blue700}</string>
 			</dict>
 		</dict>
 		<dict>

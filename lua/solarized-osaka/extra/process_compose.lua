@@ -28,7 +28,7 @@ style:
     fgColor: '${blue300}'
     keyColor: '${fg}'
     hlColor: '${green}'
-    categoryFgColor: '${blue5}'
+    categoryFgColor: '${blue700}'
   dialog:
     fgColor: '${blue300}'
     bgColor: '${black}'

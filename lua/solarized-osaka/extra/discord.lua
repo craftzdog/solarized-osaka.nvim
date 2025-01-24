@@ -18,7 +18,7 @@ function M.generate(colors)
   --text-normal: ${fg};
   --text-muted: ${base0};
   --text-link: ${blue};
-  --text-link-low-saturation: ${blue5};
+  --text-link-low-saturation: ${blue700};
   --text-positive: ${hint};
   --text-warning: ${warning};
   --text-danger: ${red};
@@ -54,7 +54,7 @@ function M.generate(colors)
   --info-danger-background:${red}26;
   --info-danger-foreground: ${red};
   --info-danger-text: ${fg};
-  --info-help-background: ${blue5}26;
+  --info-help-background: ${blue700}26;
   --info-help-foreground: ${info};
   --info-help-text: ${fg};
   --status-positive-background: ${hint};
@@ -98,11 +98,11 @@ function M.generate(colors)
   --status-green-400: ${hint};
   --button-danger-background: ${error};
   --button-danger-background-hover: ${red};
-  --button-danger-background-active: ${blue5};
+  --button-danger-background-active: ${blue700};
   --button-danger-background-disabled: ${red};
   --button-positive-background: ${hint};
   --button-positive-background-hover: ${green500};
-  --button-positive-background-active: ${green2};
+  --button-positive-background-active: ${green300};
   --button-positive-background-disabled: ${hint};
   --button-secondary-background: ${base02};
   --button-secondary-background-hover: ${base01};
@@ -198,7 +198,7 @@ div[class*="categoryHeader"] {
 }
 
 rect[mask="url(#svg-mask-status-online)"] {
-    fill: ${green2};
+    fill: ${green300};
 }
 
 rect[mask="url(#svg-mask-status-idle)"] {
@@ -224,7 +224,7 @@ rect[mask="url(#svg-mask-status-offline)"] {
   --color-3: ${yellow};
   --color-4: ${green};
   --color-5: ${green500};
-  --color-6: ${blue6};
+  --color-6: ${blue900};
   --color-7: ${blue300};
   --color-8: ${cyan};
   --color-9: ${blue};

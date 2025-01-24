@@ -34,7 +34,7 @@ tab_inactive = { fg = "${base01}", bg = "${bg}" }
 tab_width    = 1
 
 # Count
-count_copied   = { fg = "${fg}", bg = "${green2}" }
+count_copied   = { fg = "${fg}", bg = "${green300}" }
 count_cut      = { fg = "${fg}", bg = "${red300}" }
 count_selected = { fg = "${fg}", bg = "${blue700}" }
 
