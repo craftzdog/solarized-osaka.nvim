@@ -13,7 +13,7 @@ function M.generate(colors)
 
   local alacritty = util.template(
     [[
-# TokyoNight Alacritty Colors
+# solarized-osaka Alacritty Colors
 colors:
   # Default colors
   primary:

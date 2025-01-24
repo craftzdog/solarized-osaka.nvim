@@ -9,8 +9,8 @@ function M.generate(colors)
     [[
 # vim: ft=dosini
 #
-# aerc TokyoNight styleset
-# set styleset-name=tokyonight-xxx.ini in 'aerc.conf' to load the style
+# aerc solarized-osaka styleset
+# set styleset-name=solarized-osaka-xxx.ini in 'aerc.conf' to load the style
 #
 
 *.default=true
