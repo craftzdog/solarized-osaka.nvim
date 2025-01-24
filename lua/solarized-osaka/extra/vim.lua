@@ -6,9 +6,6 @@ local mapping = {
   sp = "guisp",
 }
 
---- @param colors ColorScheme
---- @param groups .Highlights
---- @param opts tokyonight.Config
 function M.generate(colors, groups, opts)
   opts.plugins = { all = false, auto = false, treesitter = false }
   local Groups = require("solarized-osaka.groups")

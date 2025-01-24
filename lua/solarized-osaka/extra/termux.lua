@@ -15,28 +15,28 @@ background: ${bg}
 foreground: ${fg}
 
 # Normal colors
-color0:  ${terminal.black}
-color1:  ${terminal.red}
-color2:  ${terminal.green}
-color3:  ${terminal.yellow}
-color4:  ${terminal.blue}
-color5:  ${terminal.magenta}
-color6:  ${terminal.cyan}
-color7:  ${terminal.white}
+color0:  ${base04}
+color1:  ${red500}
+color2:  ${green500}
+color3:  ${yellow500}
+color4:  ${blue500}
+color5:  ${magenta500}
+color6:  ${cyan500}
+color7:  ${base3}
 
 # Bright colors
-color8:  ${terminal.black_bright}
-color9:  ${terminal.red_bright}
-color10: ${terminal.green_bright}
-color11: ${terminal.yellow_bright}
-color12: ${terminal.blue_bright}
-color13: ${terminal.magenta_bright}
-color14: ${terminal.cyan_bright}
-color15: ${terminal.white_bright}
+color8:  ${base02}
+color9:  ${red300}
+color10: ${green300}
+color11: ${yellow300}
+color12: ${blue300}
+color13: ${magenta300}
+color14: ${cyan300}
+color15: ${base4}
 
 # Extended colors
 color16: ${orange}
-color17: ${red300}
+color17: ${red700}
 ]],
     colors
   )
