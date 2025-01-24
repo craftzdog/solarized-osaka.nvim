@@ -5,19 +5,22 @@ local M = {}
 -- stylua: ignore
 M.extras = {
   aerc             = { ext = "ini", url = "https://git.sr.ht/~rjarry/aerc/", label = "Aerc" },
-  alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" }, delta            = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
+  alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
+  delta            = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
   discord          = { ext = "css", url ="https://betterdiscord.app/", label = "(Better-)Discord"},
   dunst            = { ext = "dunstrc", url = "https://dunst-project.org/", label = "Dunst" },
   fish             = { ext = "fish", url = "https://fishshell.com/docs/current/index.html", label = "Fish" },
   fish_themes      = { ext = "theme", url = "https://fishshell.com/docs/current/interactive.html#syntax-highlighting", label = "Fish Themes" },
   foot             = { ext = "ini", url = "https://codeberg.org/dnkl/foot", label = "Foot" },
   fuzzel           = { ext = "ini", url = "https://codeberg.org/dnkl/fuzzel", label = "Fuzzel" },
-  fzf              = { ext = "sh", url = "https://github.com/junegunn/fzf", label = "Fzf" },
+  -- INFO: build script not working for this, headless mode doesn't seem to be assigning all the hl groups
+  -- fzf              = { ext = "sh", url = "https://github.com/junegunn/fzf", label = "Fzf" },
+  --
   ghostty          = { ext = "", url = "https://github.com/ghostty-org/ghostty", label = "Ghostty" },
   gitui            = { ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI" },
   gnome_terminal   = { ext = "dconf", url = "https://gitlab.gnome.org/GNOME/gnome-terminal", label = "GNOME Terminal" },
   helix            = { ext = "toml", url = "https://helix-editor.com/", label = "Helix" },
-  -- BUG: This is not working
+  -- BUG: not working
   -- iterm            = { ext = "itermcolors", url = "https://iterm2.com/", label = "iTerm" },
   --
   kitty            = { ext = "conf", url = "https://sw.kovidgoyal.net/kitty/conf.html", label = "Kitty" },
@@ -102,7 +105,7 @@ function M.setup()
     for style, style_name in pairs(styles) do
       vim.o.background = style == "dark" and "dark" or "light"
       ---@diagnostic disable-next-line: missing-fields
-      config.setup({ style = style, use_background = "auto" })
+      config.setup({ style = style, use_background = "auto", transparent = false })
       local colors = require("solarized-osaka.colors").setup({ transform = true })
       local fname = extra .. "/solarized_osaka_" .. style .. "." .. info.ext
       colors["_upstream_url"] = "https://github.com/craftzdog/solarized-osaka.nvim/raw/main/extras/" .. fname
