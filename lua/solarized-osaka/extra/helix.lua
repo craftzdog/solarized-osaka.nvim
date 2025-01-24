@@ -1,12 +1,4 @@
 local M = {}
--- BUG: following are not being assigned.
---"ui.menu.scroll"
--- "ui.popup"
--- "ui.text.info"
---"markup.italic"
---"markup.bold"
---"markup.normal.completion"
--- "markup.normal.hover"
 
 --- @param colors ColorScheme
 function M.generate(colors)
@@ -128,8 +120,14 @@ function M.generate(colors)
         checked = nil,
         unchecked = nil,
       },
-      bold = "Bold",
-      italic = "Italic",
+      bold = {
+        "helix",
+        modifiers = { "bold" },
+      },
+      italic = {
+        "helix",
+        modifiers = { "italic" },
+      },
       strikethrough = {
         "helix",
         modifiers = { "crossed_out" },
@@ -152,8 +150,8 @@ function M.generate(colors)
       -- UI --
       normal = {
         nil,
-        completion = "CmpItemMenu",
-        hover = "CmpItemKindDefault",
+        completion = "Pmenu",
+        hover = "PmenuSel",
       },
     },
     diff = {
@@ -213,7 +211,7 @@ function M.generate(colors)
         separator = nil,
       },
       popup = {
-        "TelescopeBorder",
+        "FloatBorder",
         info = nil,
       },
       window = "WinSeparator",
@@ -223,7 +221,7 @@ function M.generate(colors)
         -- TelescopeSelection
         focus = "Visual",
         inactive = "Comment",
-        info = "TelescopeNormal",
+        info = "@comment.info",
       },
       virtual = {
         ruler = nil,
@@ -241,8 +239,8 @@ function M.generate(colors)
         selected = "PmenuSel",
         scroll = {
           "helix",
-          fg = vim.api.nvim_get_hl(0, { name = "PmenuThumb" }).bg,
-          bg = vim.api.nvim_get_hl(0, { name = "PmenuSbar" }).bg,
+          fg = "fg",
+          bg = "bg",
         },
       },
       selection = {
