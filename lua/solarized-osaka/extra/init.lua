@@ -93,6 +93,7 @@ end
 function M.setup()
   M.docs()
   local config = require("solarized-osaka.config")
+  vim.o.background = "dark"
 
   local styles = {
     dark = "",

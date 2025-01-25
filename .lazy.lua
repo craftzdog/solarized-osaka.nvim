@@ -6,7 +6,6 @@ local M = {
 }
 
 function M.reset()
-  -- require("solarized-osaka.util").cache.clear()
   local colors = require("solarized-osaka.colors").setup()
   M.globals.colors = colors
   M.globals.c = colors
