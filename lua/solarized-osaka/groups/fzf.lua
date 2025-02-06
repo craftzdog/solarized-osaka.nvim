@@ -12,6 +12,7 @@ function M.get(c, opts)
     FzfLuaHeaderBind    = { fg = c.yellow, bg = c.bg_float },
     FzfLuaPreviewTitle  = { fg = c.blue, bg = c.bg_float },
     FzfLuaTitle         = { fg = c.orange, bg = c.bg_float },
+    FzfLuaLivePrompt    = "Normal"
   }
 end
 
