@@ -15,4 +15,4 @@ highlight-colors-set=true
 highlight-foreground-color='rgb(217, 245, 255)'
 palette=['rgb(217, 245, 255)', 'rgb(231, 51, 48)', 'rgb(87, 102, 0)', 'rgb(126, 93, 0)', 'rgb(28, 109, 167)', 'rgb(215, 56, 132)', 'rgb(39, 154, 145)', 'rgb(86, 97, 98)', 'rgb(217, 245, 255)', 'rgb(231, 51, 48)', 'rgb(87, 102, 0)', 'rgb(126, 93, 0)', 'rgb(28, 109, 167)', 'rgb(215, 56, 132)', 'rgb(39, 154, 145)', 'rgb(86, 97, 98)']
 use-theme-colors=false
-visible-name='Solarized OsakaDay'
+visible-name='Solarized Osaka Light'
