@@ -97,7 +97,7 @@ function M.setup()
 
   local styles = {
     dark = "",
-    day = "Day",
+    light = " Light",
   }
 
   for extra, info in pairs(M.extras) do
