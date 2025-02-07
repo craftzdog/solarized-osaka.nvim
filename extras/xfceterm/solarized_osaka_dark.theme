@@ -1,0 +1,9 @@
+[Scheme]
+Name=solarized-osaka Colors
+ColorBackground=#001419
+ColorForeground=#839395
+
+ColorSelectionBackground=#1a6397
+ColorSelection=#839395
+
+ColorPalette=#001014;#db302d;#849900;#b28500;#268bd3;#d23681;#29a298;#9eabac;#001419;#db302d;#849900;#b28500;#268bd3;#d23681;#29a298;#839395

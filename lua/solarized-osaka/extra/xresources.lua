@@ -6,7 +6,7 @@ local M = {}
 function M.generate(colors)
   local xr = util.template(
     [[
-! TokyoNight colors for Xresources
+! solarized-osaka colors for Xresources
 
 *background: ${bg}
 *foreground: ${fg}
@@ -18,9 +18,9 @@ function M.generate(colors)
 *color4: ${blue}
 *color5: ${magenta}
 *color6: ${cyan}
-*color7: ${fg_dark}
+*color7: ${base0}
 
-*color8: ${terminal_black}
+*color8: ${bg}
 *color9: ${red}
 *color10: ${green}
 *color11: ${yellow}

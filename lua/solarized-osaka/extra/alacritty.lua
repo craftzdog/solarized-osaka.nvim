@@ -13,7 +13,7 @@ function M.generate(colors)
 
   local alacritty = util.template(
     [[
-# TokyoNight Alacritty Colors
+# solarized-osaka Alacritty Colors
 colors:
   # Default colors
   primary:
@@ -29,11 +29,11 @@ colors:
     blue:    '${blue}'
     magenta: '${magenta}'
     cyan:    '${cyan}'
-    white:   '${fg_dark}'
+    white:   '${base0}'
 
   # Bright colors
   bright:
-    black:   '${terminal_black}'
+    black:   '${bg}'
     red:     '${red}'
     green:   '${green}'
     yellow:  '${yellow}'
@@ -44,7 +44,7 @@ colors:
 
   indexed_colors:
     - { index: 16, color: '${orange}' }
-    - { index: 17, color: '${red1}' }
+    - { index: 17, color: '${red300}' }
     
   ]],
     alacrittyColors

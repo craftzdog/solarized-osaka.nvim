@@ -29,7 +29,7 @@ module.exports =  {
     {
       types: ["symbol"],
       style: {
-        color: "${blue1}",
+        color: "${magenta}",
       },
     },
     {
@@ -47,13 +47,13 @@ module.exports =  {
     {
       types: ["keyword"],
       style: {
-        color: "${purple}",
+        color: "${violet500}",
       },
     },
     {
       types: ["operator"],
       style: {
-        color: "${blue5}",
+        color: "${cyan}",
       },
     },
     {
@@ -69,9 +69,8 @@ module.exports =  {
       },
     },
     {
-      types: ["comment"],
       style: {
-        color: "${comment}",
+        color: "${base01}",
         fontStyle: "italic",
       },
     },

@@ -13,15 +13,15 @@ function M.generate(colors)
 
   local fish = util.template(
     [[
-    # TokyoNight Color Palette
+    # solarized-osaka Color Palette
     set -l foreground ${fg}
-    set -l selection ${bg_visual}
-    set -l comment ${comment}
+    set -l selection ${blue700}
+    set -l base01 ${base01}
     set -l red ${red}
     set -l orange ${orange}
     set -l yellow ${yellow}
     set -l green ${green}
-    set -l purple ${purple}
+    set -l purple ${violet500}
     set -l cyan ${cyan}
     set -l pink ${magenta}
 
@@ -34,18 +34,18 @@ function M.generate(colors)
     set -g fish_color_end $orange
     set -g fish_color_error $red
     set -g fish_color_param $purple
-    set -g fish_color_comment $comment
+    set -g fish_color_comment $base01
     set -g fish_color_selection --background=$selection
     set -g fish_color_search_match --background=$selection
     set -g fish_color_operator $green
     set -g fish_color_escape $pink
-    set -g fish_color_autosuggestion $comment
+    set -g fish_color_autosuggestion $base01
 
     # Completion Pager Colors
-    set -g fish_pager_color_progress $comment
+    set -g fish_pager_color_progress $base01
     set -g fish_pager_color_prefix $cyan
     set -g fish_pager_color_completion $foreground
-    set -g fish_pager_color_description $comment
+    set -g fish_pager_color_description $base01
     set -g fish_pager_color_selected_background --background=$selection
 
   ]],

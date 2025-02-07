@@ -1,0 +1,23 @@
+! solarized-osaka colors for Xresources
+
+*background: #001419
+*foreground: #839395
+
+*color0: #001014
+*color1: #db302d
+*color2: #849900
+*color3: #b28500
+*color4: #268bd3
+*color5: #d23681
+*color6: #29a298
+*color7: #9eabac
+
+*color8: #001419
+*color9: #db302d
+*color10: #849900
+*color11: #b28500
+*color12: #268bd3
+*color13: #d23681
+*color14: #29a298
+*color15: #839395
+ 

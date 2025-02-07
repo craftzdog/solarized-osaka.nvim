@@ -25,16 +25,16 @@ function M.generate(colors)
     [[
 (
   selected_tab: ${magenta}
-  command_fg: ${comment}
+  command_fg: ${base01}
   selection_bg: ${bg_highlight}
   selection_fg: ${cyan}
   cmdbar_bg: ${bg}
   cmdbar_extra_lines_bg: ${bg}
-  disabled_fg: ${comment}
+  disabled_fg: ${base01}
   diff_line_add: ${green}
   diff_line_delete: ${red}
-  diff_file_added: ${green1}
-  diff_file_removed: ${red1}
+  diff_file_added: ${green500}
+  diff_file_removed: ${red300}
   diff_file_moved: ${magenta2}
   diff_file_modified: ${yellow}
   commit_hash: ${magenta}

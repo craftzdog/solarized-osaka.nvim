@@ -1,0 +1,26 @@
+{
+    "name": "Solarized Osaka",
+    "comment": "",
+    "use-theme-colors": false,
+    "foreground-color": "#839395",
+    "background-color": "#001419",
+    "palette": [
+        "#001014",
+        "#db302d",
+        "#849900",
+        "#b28500",
+        "#268bd3",
+        "#d23681",
+        "#29a298",
+        "#9eabac",
+        "#001419",
+        "#db302d",
+        "#849900",
+        "#b28500",
+        "#268bd3",
+        "#d23681",
+        "#29a298",
+        "#839395"
+    ]
+}
+  

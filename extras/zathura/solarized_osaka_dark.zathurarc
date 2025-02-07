@@ -1,0 +1,38 @@
+# Solarized Osaka color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+#
+# Tokyonight color theme
+#
+set notification-error-bg "#db302d"
+set notification-error-fg "#839395"
+set notification-warning-bg "#b28500"
+set notification-warning-fg "#001419"
+set notification-bg "#001419"
+set notification-fg "#839395"
+set completion-bg "#001419"
+set completion-fg "#9eabac"
+set completion-group-bg "#001419"
+set completion-group-fg "#9eabac"
+set completion-highlight-bg "#001419"
+set completion-highlight-fg "#839395"
+set index-bg "#001419"
+set index-fg "#839395"
+set index-active-bg "#001419"
+set index-active-fg "#839395"
+set inputbar-bg "#001419"
+set inputbar-fg "#839395"
+set statusbar-bg "#001419"
+set statusbar-fg "#839395"
+set highlight-color "#b28500"
+set highlight-active-color "#849900"
+set default-bg "#001419"
+set default-fg "#839395"
+set render-loading true
+set render-loading-fg "#001419"
+set render-loading-bg "#839395"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#001419"
+set recolor-darkcolor "#839395"

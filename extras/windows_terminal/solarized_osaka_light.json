@@ -1,0 +1,25 @@
+# Add the following object to your Windows Terminal configuration
+# https://learn.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes#creating-your-own-color-scheme
+{
+    "background": "#d9f5ff",
+    "black": "#e2f8ff",
+    "blue": "#1c6da7",
+    "brightBlack": "#d9f5ff",
+    "brightBlue": "#1c6da7",
+    "brightCyan": "#279a91",
+    "brightGreen": "#576600",
+    "brightPurple": "#696dc2",
+    "brightRed": "#e73330",
+    "brightWhite": "#566162",
+    "brightYellow": "#7e5d00",
+    "cursorColor": "#566162",
+    "cyan": "#279a91",
+    "foreground": "#566162",
+    "green": "#576600",
+    "name": "Solarized Osaka Light",
+    "purple": "#d73884",
+    "red": "#e73330",
+    "selectionBackground": "#2c96e2",
+    "white": "#737d7e",
+    "yellow": "#7e5d00"
+}

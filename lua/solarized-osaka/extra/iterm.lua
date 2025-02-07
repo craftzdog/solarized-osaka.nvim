@@ -20,8 +20,8 @@ end
 local M = {}
 
 function M.generate(colors)
-
-  local iterm = template([[
+  local iterm = template(
+    [[
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -200,26 +200,26 @@ function M.generate(colors)
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>${fg_dark.b}</real>
+		<real>${base0.b}</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>${fg_dark.g}</real>
+		<real>${base0.g}</real>
 		<key>Red Component</key>
-		<real>${fg_dark.r}</real>
+		<real>${base0.r}</real>
 	</dict>
 	<key>Ansi 8 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>${terminal_black.b}</real>
+		<real>${bg.b}</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>${terminal_black.g}</real>
+		<real>${bg.g}</real>
 		<key>Red Component</key>
-		<real>${terminal_black.r}</real>
+		<real>${bg.r}</real>
 	</dict>
 	<key>Ansi 9 Color</key>
 	<dict>
@@ -330,13 +330,13 @@ function M.generate(colors)
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>${green1.b}</real>
+		<real>${green500.b}</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>${green1.g}</real>
+		<real>${green500.g}</real>
 		<key>Red Component</key>
-		<real>${green1.r}</real>
+		<real>${green500.r}</real>
 	</dict>
 	<key>Selected Text Color</key>
 	<dict>
@@ -356,13 +356,13 @@ function M.generate(colors)
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>${bg_visual.b}</real>
+		<real>${blue700.b}</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>${bg_visual.g}</real>
+		<real>${blue700.g}</real>
 		<key>Red Component</key>
-		<real>${bg_visual.r}</real>
+		<real>${blue700.r}</real>
 	</dict>
 </dict>
 </plist>]],

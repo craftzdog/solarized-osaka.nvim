@@ -1,0 +1,17 @@
+# solarized-osaka colors for dunst
+# For more configuraion options see https://github.com/dunst-project/dunst/blob/master/dunstrc
+
+[urgency_low]
+    background = "#002c38"
+    foreground = "#839395"
+    frame_color = "#839395"
+
+[urgency_normal]
+    background = "#001419"
+    foreground = "#839395"
+    frame_color = "#839395"
+
+[urgency_critical]
+    background = "#002c38"
+    foreground = "#db302d"
+    frame_color = "#db302d"

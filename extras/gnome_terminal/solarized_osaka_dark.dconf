@@ -1,0 +1,18 @@
+# Import this theme as follows:
+# 1. Create a new profile for GNOME Terminal
+# 2. Copy the UUID of the new profile (bottom right corner of the preferences window)
+# 3. Replace <PROFILE_UUID> below with the copied UUID
+# 4. Execute `dconf load /org/gnome/terminal/legacy/profiles:/ < ${_name}.dconf`
+
+[:<PROFILE_UUID>]
+background-color='rgb(0, 20, 25)'
+cursor-background-color='rgb(131, 147, 149)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(0, 20, 25)'
+foreground-color='rgb(131, 147, 149)'
+highlight-background-color='rgb(131, 147, 149)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(0, 20, 25)'
+palette=['rgb(0, 20, 25)', 'rgb(219, 48, 45)', 'rgb(132, 153, 0)', 'rgb(178, 133, 0)', 'rgb(38, 139, 211)', 'rgb(210, 54, 129)', 'rgb(41, 162, 152)', 'rgb(131, 147, 149)', 'rgb(0, 20, 25)', 'rgb(219, 48, 45)', 'rgb(132, 153, 0)', 'rgb(178, 133, 0)', 'rgb(38, 139, 211)', 'rgb(210, 54, 129)', 'rgb(41, 162, 152)', 'rgb(131, 147, 149)']
+use-theme-colors=false
+visible-name='Solarized Osaka'
