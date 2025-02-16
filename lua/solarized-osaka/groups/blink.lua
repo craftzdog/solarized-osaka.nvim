@@ -18,7 +18,7 @@ function M.get(c, opts)
     -- ISSUE: passing c.none causes menu to be invisible
     -- BlinkCmpMenu = { fg = c.base01, bg = c.none },
     BlinkCmpMenu                         = { fg = c.base01, bg = c.base02 },
-    BlinkCmpKindDefault                  = { fg = c.base01, bg = c.none }, -- Default fallback
+    BlinkCmpKind                         = { fg = c.base01, bg = c.none },
     BlinkCmpKindCodeium                  = { fg = c.cyan500, bg = c.none },
     BlinkCmpKindCopilot                  = { fg = c.cyan500, bg = c.none },
     BlinkCmpKindTabNine                  = { fg = c.cyan500, bg = c.none },
