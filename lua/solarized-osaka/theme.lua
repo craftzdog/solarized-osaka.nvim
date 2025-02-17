@@ -28,7 +28,7 @@ function M.setup()
     vim.api.nvim_set_hl(0, group, hl)
   end
 
-  if opts.terminal_colors then
+  if opts.options.terminal_colors then
     M.terminal(colors)
   end
 
