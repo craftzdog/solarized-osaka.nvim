@@ -41,6 +41,7 @@ base07 = '#d23681'
 [os]
 disabled = false
 style = "bg:base02 fg:base03"
+format = "[$symbol ]($style)"
 
 [os.symbols]
 Windows = "󰍲"
@@ -64,10 +65,11 @@ Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
 [username]
+disabled = true
 show_always = true
 style_user = "bg:base02 fg:base03"
 style_root = "bg:base02 fg:base03"
-format = '[ $user ]($style)'
+format = '[$user ]($style)'
 
 [directory]
 style = "fg:base03 bg:base0"
@@ -97,7 +99,7 @@ style = "bg:base02"
 format = '[[ $symbol( $version) ](fg:base03 bg:base02)]($style)'
 
 [c]
-symbol = " "
+symbol = ""
 style = "bg:base02"
 format = '[[ $symbol( $version) ](fg:base03 bg:base02)]($style)'
 
@@ -117,7 +119,7 @@ style = "bg:base02"
 format = '[[ $symbol( $version) ](fg:base03 bg:base02)]($style)'
 
 [java]
-symbol = " "
+symbol = ""
 style = "bg:base02"
 format = '[[ $symbol( $version) ](fg:base03 bg:base02)]($style)'
 
