@@ -74,13 +74,92 @@ M.default = {
   fg = hsl(186, 8, 55),
 }
 
+-- Solarized Light/Day official palette
+---@class Palette
+M.day = {
+  none = "NONE",
+
+  -- Official Solarized Light base colors (swapped from dark)
+  base04 = "#fdf6e3", -- base3 (lightest background)
+  base03 = "#eee8d5", -- base2 (highlighted background)
+  base02 = "#93a1a1", -- base1 (comments/secondary content)
+  base01 = "#839496", -- base0 (body text/default code)
+  base00 = "#657b83", -- base00 (primary content)
+  base0 = "#586e75",  -- base01 (optional emphasized content)
+  base1 = "#073642",  -- base02 (background highlights)
+  base2 = "#002b36",  -- base03 (darkest for special use)
+  base3 = "#002b36",  -- base03
+  base4 = "#fdf6e3",  -- base3
+
+  -- Official Solarized accent colors (same for light/dark)
+  yellow = "#b58900",
+  yellow100 = "#f5e6b3",
+  yellow300 = "#ddb76f",
+  yellow500 = "#b58900",
+  yellow700 = "#8a6900",
+  yellow900 = "#5f4900",
+  
+  orange = "#cb4b16",
+  orange100 = "#f7c5a8",
+  orange300 = "#e27847",
+  orange500 = "#cb4b16",
+  orange700 = "#9e3a11",
+  orange900 = "#6f280b",
+  
+  red = "#dc322f",
+  red100 = "#f9b3b1",
+  red300 = "#e7625f",
+  red500 = "#dc322f",
+  red700 = "#aa2824",
+  red900 = "#781c19",
+  
+  magenta = "#d33682",
+  magenta100 = "#f7b3d8",
+  magenta300 = "#e467a3",
+  magenta500 = "#d33682",
+  magenta700 = "#a52a66",
+  magenta900 = "#761d4a",
+  
+  violet = "#6c71c4",
+  violet100 = "#d5d7f2",
+  violet300 = "#9fa3db",
+  violet500 = "#6c71c4",
+  violet700 = "#545899",
+  violet900 = "#3c3f6d",
+  
+  blue = "#268bd2",
+  blue100 = "#b3d9f2",
+  blue300 = "#62afe5",
+  blue500 = "#268bd2",
+  blue700 = "#1e6ca3",
+  blue900 = "#154c75",
+  
+  cyan = "#2aa198",
+  cyan100 = "#b3e5e2",
+  cyan300 = "#5ec4bc",
+  cyan500 = "#2aa198",
+  cyan700 = "#207d76",
+  cyan900 = "#175854",
+  
+  green = "#859900",
+  green100 = "#dfe8b3",
+  green300 = "#b1c35f",
+  green500 = "#859900",
+  green700 = "#677700",
+  green900 = "#495400",
+
+  bg = "#fdf6e3",      -- base3
+  bg_highlight = "#eee8d5", -- base2
+  fg = "#657b83",      -- base00
+}
+
 ---@return ColorScheme
 function M.setup(opts)
   opts = opts or {}
   local config = require("solarized-osaka.config")
 
-  -- local style = config.is_day() and config.options.light_style or config.options.style
-  local style = "default"
+  -- Use 'day' palette for light mode, 'default' for dark mode
+  local style = config.is_day() and "day" or "default"
   local palette = M[style] or {}
   if type(palette) == "function" then
     palette = palette()
@@ -88,15 +167,15 @@ function M.setup(opts)
 
   -- Color Palette
   ---@class ColorScheme: Palette
-  local colors = vim.tbl_deep_extend("force", vim.deepcopy(M.default), palette)
+  local colors = vim.tbl_deep_extend("force", vim.deepcopy(M[style]), palette)
 
   util.bg = colors.bg
   util.day_brightness = config.options.day_brightness
 
-  colors.black = util.darken(colors.bg, 0.8, "#000000")
+  colors.black = config.is_day() and util.lighten(colors.bg, 0.8, "#ffffff") or util.darken(colors.bg, 0.8, "#000000")
   colors.border = colors.black
 
-  -- Popups and statusline always get a dark background
+  -- Popups and statusline background
   colors.bg_popup = colors.base04
   colors.bg_statusline = colors.base03
 
@@ -119,9 +198,7 @@ function M.setup(opts)
   colors.todo = colors.violet500
 
   config.options.on_colors(colors)
-  if opts.transform and config.is_day() then
-    util.invert_colors(colors)
-  end
+  -- Do not invert colors - we have separate palettes for day/night
 
   return colors
 end
