@@ -7,7 +7,7 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     -- Notifier
-    SnacksNotifierDebug            = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
+    SnacksNotifierDebug           = { fg = c.fg, bg = opts.transparent and c.none or c.bg },
     SnacksNotifierBorderDebug     = { fg = Util.blend(c.base01, c.bg, 0.4), bg = opts.transparent and c.none or c.bg },
     SnacksNotifierIconDebug       = { fg = c.base01 },
     SnacksNotifierTitleDebug      = { fg = c.base01 },
