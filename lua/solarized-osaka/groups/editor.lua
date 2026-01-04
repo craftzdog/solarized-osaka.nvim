@@ -26,7 +26,7 @@ function M.get(c, options)
     SignColumn                  = { fg = c.base0 }, -- column where |signs| are displayed
     SignColumnSB                = { fg = c.base0 }, -- column where |signs| are displayed
     Substitute                  = { fg = c.base04, bg = c.red500 }, -- |:substitute| replacement text highlighting
-    LineNr                      = { fg = c.yellow700, bg = options.transparent and c.none or c.bg }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    LineNr                      = { fg = c.yellow700, bg = options.transparent and c.none or c.bg_highlight }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr                = { fg = c.orange500, sp = c.base1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen                  = { fg = c.red100, bg = c.red500, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg                     = { fg = c.blue500 }, -- 'showmode' message (e.g., "-- INSERT -- ")
@@ -57,7 +57,7 @@ function M.get(c, options)
     StatusLine                  = { fg = c.base1, bg = c.base03 }, -- status line of current window
     StatusLineNC                = { fg = options.hide_inactive_statusline and c.bg or c.base0, bg = options.hide_inactive_statusline and c.none or c.base04, sp = options.hide_inactive_statusline and c.border or c.none, underline = options.hide_inactive_statusline and true or false }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine                     = { fg = c.base0, bg = c.base02, sp = c.base0 }, -- tab pages line, not active tab page label
-    TabLineFill                 = { fg = c.base0, bg = c.base02 }, -- tab pages line, where there are no labels
+    TabLineFill                 = { fg = c.base0, bg = options.transparent and c.none or c.black }, -- tab pages line, where there are no labels
     TabLineSel                  = { fg = c.yellow500, bg = c.bg }, -- tab pages line, active tab page label
     Title                       = { fg = c.orange500, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
     Visual                      = { bg = c.base02 }, -- Visual mode selection
