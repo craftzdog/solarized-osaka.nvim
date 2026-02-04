@@ -9,7 +9,7 @@ function M.get(c, options)
     lCursor                     = { fg = c.base03, bg = c.base00 }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM                    = { fg = c.base03, bg = c.base0 }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn                = { bg = c.base02 }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine                  = { bg = c.base03, sp = c.base1 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine                  = { bg = c.base03 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory                   = { fg = c.blue500 }, -- directory names (and other special names in listings)
     DiffAdd                     = { fg = c.green500, bg = c.base02, bold = true }, -- diff mode: Added line |diff.txt|
     DiffChange                  = { fg = c.yellow500, bg = c.base02, bold = true }, -- diff mode: Changed line |diff.txt|
