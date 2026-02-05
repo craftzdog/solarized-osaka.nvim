@@ -75,21 +75,22 @@ function M.get(name, colors, opts)
 end
 
 function M.setup(colors, opts)
-  local groups = {
+  local builtin_groups = {
     editor = true,
     syntax = true,
     semantic_tokens = true,
     treesitter = true,
   }
+  local plugin_groups = {}
   if opts.plugins.all then
     for _, group in pairs(M.plugins) do
-      groups[group] = true
+      plugin_groups[group] = true
     end
   elseif opts.plugins.auto and package.loaded.lazy then
     local plugins = require("lazy.core.config").plugins
     for plugin, group in pairs(M.plugins) do
       if plugins[plugin] then
-        groups[group] = true
+        plugin_groups[group] = true
       end
     end
 
@@ -97,7 +98,7 @@ function M.setup(colors, opts)
     if plugins["mini.nvim"] then
       for _, group in pairs(M.plugins) do
         if group:find("^mini_") then
-          groups[group] = true
+          plugin_groups[group] = true
         end
       end
     end
@@ -111,17 +112,19 @@ function M.setup(colors, opts)
       if type(use) == "table" then
         use = use.enabled
       end
-      groups[group] = use or nil
+      plugin_groups[group] = use or nil
     end
   end
 
-  local names = vim.tbl_keys(groups)
-  table.sort(names)
+  local builtin_names = vim.tbl_keys(builtin_groups)
+  local plugin_names = vim.tbl_keys(plugin_groups)
+  local names = vim.list_extend(builtin_names, plugin_names)
 
   local ret = {}
 
-  for group in pairs(groups) do
-    for k, v in pairs(M.get(group, colors, opts)) do
+  for _, name in ipairs(names) do
+    vim.notify(name)
+    for k, v in pairs(M.get(name, colors, opts)) do
       ret[k] = v
     end
   end
@@ -130,6 +133,7 @@ function M.setup(colors, opts)
 
   opts.on_highlights(ret, colors)
 
+  local groups = vim.tbl_extend("force", builtin_groups, plugin_groups)
   return ret, groups
 end
 
