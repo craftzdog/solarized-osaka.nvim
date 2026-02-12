@@ -123,7 +123,6 @@ function M.setup(colors, opts)
   local ret = {}
 
   for _, name in ipairs(names) do
-    vim.notify(name)
     for k, v in pairs(M.get(name, colors, opts)) do
       ret[k] = v
     end
