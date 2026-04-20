@@ -4,19 +4,19 @@
 
 themes {
     ${_name} {
-        fg "#566162"
-        bg "#87ddff"
+        fg "#576d74"
+        bg "#ede7d3"
         // Black should match the terminal background color
         // This ensures the top and bottom bars are transparent
-        black "#d9f5ff"
-        red "#e73330"
-        green "#576600"
-        yellow "#7e5d00"
-        blue "#1c6da7"
-        magenta "#d73884"
-        cyan "#279a91"
-        white "#737d7e"
-        orange "#d14f17"
+        black "#fdf5e2"
+        red "#db302d"
+        green "#849900"
+        yellow "#b28500"
+        blue "#268bd3"
+        magenta "#d23681"
+        cyan "#29a298"
+        white "#637981"
+        orange "#c94c16"
     }
 }
 
