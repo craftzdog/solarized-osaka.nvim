@@ -1,23 +1,23 @@
 ! solarized-osaka colors for Xresources
 
-*background: #d9f5ff
-*foreground: #566162
+*background: #fdf5e2
+*foreground: #576d74
 
-*color0: #e2f8ff
-*color1: #e73330
-*color2: #576600
-*color3: #7e5d00
-*color4: #1c6da7
-*color5: #d73884
-*color6: #279a91
-*color7: #737d7e
+*color0: #cac4b5
+*color1: #db302d
+*color2: #849900
+*color3: #b28500
+*color4: #268bd3
+*color5: #d23681
+*color6: #29a298
+*color7: #637981
 
-*color8: #d9f5ff
-*color9: #e73330
-*color10: #576600
-*color11: #7e5d00
-*color12: #1c6da7
-*color13: #d73884
-*color14: #279a91
-*color15: #566162
+*color8: #fdf5e2
+*color9: #db302d
+*color10: #849900
+*color11: #b28500
+*color12: #268bd3
+*color13: #d23681
+*color14: #29a298
+*color15: #576d74
  

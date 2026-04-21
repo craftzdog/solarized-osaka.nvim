@@ -1,163 +1,163 @@
-attribute = { fg = "#e73330" }
-comment = { fg = "#6e8992", modifiers = ["italic"] }
-"comment.block.documentation" = { fg = "#279a91" }
-constant = { fg = "#279a91" }
-"constant.builtin" = { fg = "#d14f17" }
-"constant.builtin.boolean" = { fg = "#279a91" }
-"constant.character" = { fg = "#279a91" }
-"constant.character.escape" = { fg = "#f9611f" }
-"constant.numeric" = { fg = "#279a91" }
-"constant.numeric.float" = { fg = "#279a91" }
-"constant.numeric.integer" = { fg = "#279a91" }
-constructor = { fg = "#7e5d00" }
+attribute = { fg = "#db302d" }
+comment = { fg = "#adb7b7", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "#29a298" }
+constant = { fg = "#29a298" }
+"constant.builtin" = { fg = "#c94c16" }
+"constant.builtin.boolean" = { fg = "#29a298" }
+"constant.character" = { fg = "#29a298" }
+"constant.character.escape" = { fg = "#f74f0c" }
+"constant.numeric" = { fg = "#29a298" }
+"constant.numeric.float" = { fg = "#29a298" }
+"constant.numeric.integer" = { fg = "#29a298" }
+constructor = { fg = "#b28500" }
 "diagnostic.error" = { underline = { style = "curl" } }
 "diagnostic.hint" = { underline = { style = "curl" } }
 "diagnostic.info" = { underline = { style = "curl" } }
 "diagnostic.warning" = { underline = { style = "curl" } }
-"diff.delta" = { fg = "#7e5d00" }
-"diff.delta.moved" = { fg = "#1c6da7" }
-"diff.minus" = { fg = "#e73330" }
-"diff.plus" = { fg = "#576600" }
-error = { fg = "#e73330" }
-function = { fg = "#1c6da7" }
-"function.builtin" = { fg = "#d14f17" }
-"function.macro" = { fg = "#e73330" }
-"function.method" = { fg = "#1c6da7" }
-"function.special" = { fg = "#e73330" }
-hint = { fg = "#279a91" }
-info = { fg = "#1c6da7" }
-keyword = { fg = "#576600", modifiers = ["italic"] }
-"keyword.control" = { fg = "#576600" }
-"keyword.control.conditional" = { fg = "#576600" }
-"keyword.control.exception" = { fg = "#576600" }
-"keyword.control.repeat" = { fg = "#576600" }
-"keyword.control.return" = { fg = "#576600", modifiers = ["italic"] }
-"keyword.directive" = { fg = "#e73330" }
-"keyword.function" = { fg = "#576600" }
-"keyword.operator" = { fg = "#576600" }
-label = { fg = "#576600" }
+"diff.delta" = { fg = "#b28500" }
+"diff.delta.moved" = { fg = "#268bd3" }
+"diff.minus" = { fg = "#db302d" }
+"diff.plus" = { fg = "#849900" }
+error = { fg = "#db302d" }
+function = { fg = "#268bd3" }
+"function.builtin" = { fg = "#c94c16" }
+"function.macro" = { fg = "#db302d" }
+"function.method" = { fg = "#268bd3" }
+"function.special" = { fg = "#db302d" }
+hint = { fg = "#29a298" }
+info = { fg = "#268bd3" }
+keyword = { fg = "#849900", modifiers = ["italic"] }
+"keyword.control" = { fg = "#849900" }
+"keyword.control.conditional" = { fg = "#849900" }
+"keyword.control.exception" = { fg = "#849900" }
+"keyword.control.repeat" = { fg = "#849900" }
+"keyword.control.return" = { fg = "#849900", modifiers = ["italic"] }
+"keyword.directive" = { fg = "#db302d" }
+"keyword.function" = { fg = "#849900" }
+"keyword.operator" = { fg = "#849900" }
+label = { fg = "#849900" }
 "markup.bold" = { modifiers = ["bold"] }
-"markup.heading" = { fg = "#d14f17", modifiers = ["bold"] }
-"markup.heading.completion" = { bg = "#41d7fc", fg = "#737d7e" }
-"markup.heading.hover" = { bg = "#585449", fg = "#6e8992" }
+"markup.heading" = { fg = "#c94c16", modifiers = ["bold"] }
+"markup.heading.completion" = { bg = "#ede7d3", fg = "#637981" }
+"markup.heading.hover" = { bg = "#063540", fg = "#adb7b7" }
 "markup.italic" = { modifiers = ["italic"] }
-"markup.link" = { fg = "#1c6da7", underline = { style = "line" } }
-"markup.link.label" = { fg = "#d14f17" }
-"markup.link.text" = { fg = "#1c6da7", underline = { style = "line" } }
+"markup.link" = { fg = "#268bd3", underline = { style = "line" } }
+"markup.link.label" = { fg = "#c94c16" }
+"markup.link.text" = { fg = "#268bd3", underline = { style = "line" } }
 "markup.link.url" = { underline = { style = "line" } }
-"markup.list" = { fg = "#1c6da7" }
-"markup.normal.completion" = { bg = "#41d7fc", fg = "#737d7e" }
-"markup.normal.hover" = { bg = "#585449", fg = "#6e8992" }
-"markup.raw" = { fg = "#279a91" }
-"markup.raw.inline" = { bg = "#bbd300", fg = "#7e5d00" }
+"markup.list" = { fg = "#268bd3" }
+"markup.normal.completion" = { bg = "#ede7d3", fg = "#637981" }
+"markup.normal.hover" = { bg = "#063540", fg = "#adb7b7" }
+"markup.raw" = { fg = "#29a298" }
+"markup.raw.inline" = { bg = "#d6fead", fg = "#b28500" }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-namespace = { fg = "#e73330" }
-operator = { fg = "#576600" }
-special = { fg = "#d14f17" }
-string = { fg = "#279a91" }
-"string.regexp" = { fg = "#0d6b63" }
-"string.special" = { fg = "#d14f17" }
-tag = { fg = "#576600" }
-type = { fg = "#7e5d00" }
-"type.builtin" = { fg = "#7e5d00" }
-"type.enum" = { fg = "#7e5d00" }
-"type.enum.variant" = { fg = "#279a91" }
+namespace = { fg = "#db302d" }
+operator = { fg = "#849900" }
+special = { fg = "#c94c16" }
+string = { fg = "#29a298" }
+"string.regexp" = { fg = "#1a6265" }
+"string.special" = { fg = "#c94c16" }
+tag = { fg = "#849900" }
+type = { fg = "#b28500" }
+"type.builtin" = { fg = "#b28500" }
+"type.enum" = { fg = "#b28500" }
+"type.enum.variant" = { fg = "#29a298" }
 "ui.background" = { bg = "bg" }
-"ui.cursor" = { bg = "#737d7e", fg = "#87ddff" }
-"ui.cursor.match" = { bg = "#e73330", fg = "#e51000", modifiers = ["bold"] }
-"ui.linenr" = { bg = "#d9f5ff", fg = "#ca9900" }
-"ui.linenr.select" = { fg = "#d14f17" }
-"ui.menu" = { bg = "#41d7fc", fg = "#737d7e" }
+"ui.cursor" = { bg = "#637981", fg = "#fdf5e2" }
+"ui.cursor.match" = { bg = "#db302d", fg = "#570f0e", modifiers = ["bold"] }
+"ui.linenr" = { bg = "#fdf5e2", fg = "#ffbf00" }
+"ui.linenr.select" = { fg = "#c94c16" }
+"ui.menu" = { bg = "#ede7d3", fg = "#637981" }
 "ui.menu.scroll" = { bg = "bg", fg = "fg" }
-"ui.menu.selected" = { bg = "#585449", fg = "#6e8992" }
-"ui.popup" = { bg = "#d9f5ff", fg = "#ca9900" }
+"ui.menu.selected" = { bg = "#063540", fg = "#adb7b7" }
+"ui.popup" = { bg = "#ffffff", fg = "#ffbf00" }
 "ui.selection" = { bg = "bg_highlight" }
-"ui.statusline" = { bg = "#87ddff", fg = "#6e7474" }
-"ui.statusline.inactive" = { bg = "#d9f5ff", fg = "#737d7e" }
+"ui.statusline" = { bg = "#fdf5e2", fg = "#576d74" }
+"ui.statusline.inactive" = { bg = "#ffffff", fg = "#637981" }
 "ui.statusline.normal" = { bg = "blue", fg = "black" }
-"ui.text" = { bg = "#d9f5ff", fg = "#737d7e" }
-"ui.text.focus" = { bg = "#41d7fc" }
-"ui.text.inactive" = { fg = "#6e8992", modifiers = ["italic"] }
-"ui.text.info" = { fg = "#1c6da7" }
-"ui.virtual.inlay-hint" = { bg = "#50d3da", fg = "#279a91" }
-"ui.window" = { fg = "#41d7fc", modifiers = ["bold"] }
-variable = { fg = "#737d7e" }
-"variable.builtin" = { fg = "#d14f17" }
-"variable.other.member" = { fg = "#279a91" }
-"variable.parameter" = { fg = "#d14f17" }
-warning = { fg = "#7e5d00" }
+"ui.text" = { bg = "#fdf5e2", fg = "#637981" }
+"ui.text.focus" = { bg = "#ede7d3" }
+"ui.text.inactive" = { fg = "#adb7b7", modifiers = ["italic"] }
+"ui.text.info" = { fg = "#268bd3" }
+"ui.virtual.inlay-hint" = { bg = "#b7fefa", fg = "#29a298" }
+"ui.window" = { fg = "#ede7d3", modifiers = ["bold"] }
+variable = { fg = "#637981" }
+"variable.builtin" = { fg = "#c94c16" }
+"variable.other.member" = { fg = "#29a298" }
+"variable.parameter" = { fg = "#c94c16" }
+warning = { fg = "#b28500" }
 
 [palette]
-base0 = "#737d7e"
-base00 = "#667c84"
-base01 = "#6e8992"
-base02 = "#41d7fc"
-base03 = "#87ddff"
-base04 = "#d9f5ff"
-base1 = "#6e7474"
-base2 = "#585449"
-base3 = "#584b1f"
-base4 = "#474747"
-bg = "#d9f5ff"
-bg_float = "#d9f5ff"
-bg_highlight = "#87ddff"
-bg_popup = "#d9f5ff"
-bg_sidebar = "#d9f5ff"
-bg_statusline = "#87ddff"
-black = "#e2f8ff"
-blue = "#1c6da7"
-blue100 = "#00678d"
-blue300 = "#2f84be"
-blue500 = "#1c6da7"
-blue700 = "#2c96e2"
-blue900 = "#95c4f9"
-border = "#e2f8ff"
-cyan = "#279a91"
-cyan100 = "#115855"
-cyan300 = "#0d6b63"
-cyan500 = "#279a91"
-cyan700 = "#32a6ab"
-cyan900 = "#50d3da"
-error = "#e73330"
-fg = "#566162"
-fg_float = "#566162"
-green = "#576600"
-green100 = "#3c5610"
-green300 = "#435e00"
-green500 = "#576600"
-green700 = "#849800"
-green900 = "#bbd300"
-hint = "#279a91"
-info = "#1c6da7"
-magenta = "#d73884"
-magenta100 = "#f00098"
-magenta300 = "#af246d"
-magenta500 = "#d73884"
-magenta700 = "#f1569a"
-magenta900 = "#f5bdd0"
-orange = "#d14f17"
-orange100 = "#c35800"
-orange300 = "#b73806"
-orange500 = "#d14f17"
-orange700 = "#f9611f"
-orange900 = "#fab0a1"
-red = "#e73330"
-red100 = "#e51000"
-red300 = "#be2420"
-red500 = "#e73330"
-red700 = "#f55e5d"
-red900 = "#f6c0c0"
-todo = "#696dc2"
-violet = "#696dc2"
-violet100 = "#2248fa"
-violet300 = "#6a72e1"
-violet500 = "#696dc2"
-violet700 = "#8c8fd7"
-violet900 = "#c8c9e7"
-warning = "#7e5d00"
-yellow = "#7e5d00"
-yellow100 = "#615300"
-yellow300 = "#836100"
-yellow500 = "#7e5d00"
-yellow700 = "#ca9900"
-yellow900 = "#fccb00"
+base0 = "#637981"
+base00 = "#9eabac"
+base01 = "#adb7b7"
+base02 = "#ede7d3"
+base03 = "#fdf5e2"
+base04 = "#ffffff"
+base1 = "#576d74"
+base2 = "#063540"
+base3 = "#002c38"
+base4 = "#001419"
+bg = "#fdf5e2"
+bg_float = "#ffffff"
+bg_highlight = "#ede7d3"
+bg_popup = "#ffffff"
+bg_sidebar = "#ffffff"
+bg_statusline = "#fdf5e2"
+black = "#cac4b5"
+blue = "#268bd3"
+blue100 = "#0f3856"
+blue300 = "#1a6397"
+blue500 = "#268bd3"
+blue700 = "#46acf5"
+blue900 = "#a8daff"
+border = "#cac4b5"
+cyan = "#29a298"
+cyan100 = "#103a3c"
+cyan300 = "#1a6265"
+cyan500 = "#29a298"
+cyan700 = "#2aeddd"
+cyan900 = "#b7fefa"
+error = "#db302d"
+fg = "#576d74"
+fg_float = "#576d74"
+green = "#849900"
+green100 = "#2c3300"
+green300 = "#586600"
+green500 = "#849900"
+green700 = "#b7f900"
+green900 = "#d6fead"
+hint = "#29a298"
+info = "#268bd3"
+magenta = "#d23681"
+magenta100 = "#541131"
+magenta300 = "#af2668"
+magenta500 = "#d23681"
+magenta700 = "#f254a0"
+magenta900 = "#ff75b7"
+orange = "#c94c16"
+orange100 = "#5b220a"
+orange300 = "#a13c10"
+orange500 = "#c94c16"
+orange700 = "#f74f0c"
+orange900 = "#ff9165"
+red = "#db302d"
+red100 = "#570f0e"
+red300 = "#b7211f"
+red500 = "#db302d"
+red700 = "#f55350"
+red900 = "#ff9a99"
+todo = "#6d71c4"
+violet = "#6d71c4"
+violet100 = "#24275a"
+violet300 = "#484eb6"
+violet500 = "#6d71c4"
+violet700 = "#9b9fec"
+violet900 = "#cccffe"
+warning = "#b28500"
+yellow = "#b28500"
+yellow100 = "#332700"
+yellow300 = "#664c00"
+yellow500 = "#b28500"
+yellow700 = "#ffbf00"
+yellow900 = "#ffe899"

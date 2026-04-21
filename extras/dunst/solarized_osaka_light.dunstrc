@@ -2,16 +2,16 @@
 # For more configuraion options see https://github.com/dunst-project/dunst/blob/master/dunstrc
 
 [urgency_low]
-    background = "#87ddff"
-    foreground = "#566162"
-    frame_color = "#566162"
+    background = "#fdf5e2"
+    foreground = "#576d74"
+    frame_color = "#576d74"
 
 [urgency_normal]
-    background = "#d9f5ff"
-    foreground = "#566162"
-    frame_color = "#566162"
+    background = "#fdf5e2"
+    foreground = "#576d74"
+    frame_color = "#576d74"
 
 [urgency_critical]
-    background = "#87ddff"
-    foreground = "#e73330"
-    frame_color = "#e73330"
+    background = "#ede7d3"
+    foreground = "#db302d"
+    frame_color = "#db302d"

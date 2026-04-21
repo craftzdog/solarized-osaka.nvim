@@ -1,9 +1,9 @@
 [Scheme]
 Name=solarized-osaka Colors
-ColorBackground=#d9f5ff
-ColorForeground=#566162
+ColorBackground=#fdf5e2
+ColorForeground=#576d74
 
-ColorSelectionBackground=#2c96e2
-ColorSelection=#566162
+ColorSelectionBackground=#46acf5
+ColorSelection=#576d74
 
-ColorPalette=#e2f8ff;#e73330;#576600;#7e5d00;#1c6da7;#d73884;#279a91;#737d7e;#d9f5ff;#e73330;#576600;#7e5d00;#1c6da7;#d73884;#279a91;#566162
+ColorPalette=#cac4b5;#db302d;#849900;#b28500;#268bd3;#d23681;#29a298;#637981;#fdf5e2;#db302d;#849900;#b28500;#268bd3;#d23681;#29a298;#576d74

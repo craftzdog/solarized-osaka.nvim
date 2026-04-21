@@ -1,14 +1,14 @@
     # solarized-osaka Color Palette
-    set -l foreground 566162
-    set -l selection 2c96e2
-    set -l base01 6e8992
-    set -l red e73330
-    set -l orange d14f17
-    set -l yellow 7e5d00
-    set -l green 576600
-    set -l purple 696dc2
-    set -l cyan 279a91
-    set -l pink d73884
+    set -l foreground 576d74
+    set -l selection 46acf5
+    set -l base01 adb7b7
+    set -l red db302d
+    set -l orange c94c16
+    set -l yellow b28500
+    set -l green 849900
+    set -l purple 6d71c4
+    set -l cyan 29a298
+    set -l pink d23681
 
     # Syntax Highlighting Colors
     set -g fish_color_normal $foreground
