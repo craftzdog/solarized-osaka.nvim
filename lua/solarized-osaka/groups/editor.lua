@@ -11,9 +11,9 @@ function M.get(c, options)
     CursorColumn                = { bg = c.base02 }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine                  = { bg = c.base03 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory                   = { fg = c.blue500 }, -- directory names (and other special names in listings)
-    DiffAdd                     = { fg = c.green500, bg = c.base02, bold = true }, -- diff mode: Added line |diff.txt|
-    DiffChange                  = { fg = c.yellow500, bg = c.base02, bold = true }, -- diff mode: Changed line |diff.txt|
-    DiffDelete                  = { fg = c.red500, bg = c.base02, bold = true }, -- diff mode: Deleted line |diff.txt|
+    DiffAdd                     = { fg = c.green500, bg = c.base04, bold = true }, -- diff mode: Added line |diff.txt|
+    DiffChange                  = { fg = c.yellow500, bg = c.base04, bold = true }, -- diff mode: Changed line |diff.txt|
+    DiffDelete                  = { fg = c.red500, bg = c.base04, bold = true }, -- diff mode: Deleted line |diff.txt|
     DiffText                    = { fg = c.blue500, bg = c.base02, bold = true }, -- diff mode: Changed text within a changed line |diff.txt|
     EndOfBuffer                 = { fg = c.base01 }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     -- TermCursor  = { }, -- cursor in a focused terminal
