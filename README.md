@@ -25,6 +25,7 @@ Here is what the improved color palette looks like:
   [0.9.0](https://github.com/neovim/neovim/releases/tag/v0.9.0) features.
 - Enhances terminal colors.
 - Introduces a darker background option for sidebar-like windows.
+- Offers a `vivid` style for reading in bright environments.
 - Supports all major plugins.
 
 ## ⚡️ Requirements
@@ -52,6 +53,10 @@ Install the theme with your preferred package manager, such as
 
 ```vim
 colorscheme solarized-osaka
+# light mode
+colorscheme solarized-osaka-light
+# vivid mode
+colorscheme solarized-osaka-vivid
 ```
 
 ### [Lua](https://www.lua.org)
@@ -71,6 +76,8 @@ unless `setup` is explicitly called.
 require("solarized-osaka").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
+  style = "", -- The default dark style. Set to `vivid` for a higher-contrast variant that stays readable in bright environments
+  light_style = "light", -- The theme is used when the background is set to light
   transparent = true, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
   styles = {
@@ -86,6 +93,7 @@ require("solarized-osaka").setup({
   },
   sidebars = { "qf", "help" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
   day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+  vivid_brightness = 0.3, -- Adjusts how far the **Vivid** style brightens text colors. Number between 0 and 1, from the default palette to white
   hide_inactive_statusline = false, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
   dim_inactive = false, -- dims inactive windows
   lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold

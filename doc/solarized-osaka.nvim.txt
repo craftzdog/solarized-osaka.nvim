@@ -7,7 +7,7 @@ Table of Contents                          *solarized-osaka.nvim-table-of-conten
   - Storm                                  |solarized-osaka.nvim-tokyo-night-storm|
   - Night                                  |solarized-osaka.nvim-tokyo-night-night|
   - Moon                                    |solarized-osaka.nvim-tokyo-night-moon|
-  - Day                                      |solarized-osaka.nvim-tokyo-night-day|
+  - Light                                  |solarized-osaka.nvim-tokyo-night-light|
   - Features                            |solarized-osaka.nvim-tokyo-night-features|
   - Requirements                    |solarized-osaka.nvim-tokyo-night-requirements|
   - Installation                    |solarized-osaka.nvim-tokyo-night-installation|
@@ -38,7 +38,7 @@ NIGHT                                      *solarized-osaka.nvim-tokyo-night-nig
 MOON                                        *solarized-osaka.nvim-tokyo-night-moon*
 
 
-DAY                                          *solarized-osaka.nvim-tokyo-night-day*
+LIGHT                                      *solarized-osaka.nvim-tokyo-night-light*
 
 
 FEATURES                                *solarized-osaka.nvim-tokyo-night-features*
@@ -108,7 +108,7 @@ VIM SCRIPT ~
     " There are also colorschemes for the different styles.
     colorscheme solarized-osaka-night
     colorscheme solarized-osaka-storm
-    colorscheme solarized-osaka-day
+    colorscheme solarized-osaka-light
     colorscheme solarized-osaka-moon
 <
 
@@ -163,9 +163,9 @@ CONFIGURATION                      *solarized-osaka.nvim-tokyo-night-configurati
   Set the configuration **BEFORE** loading the color scheme with `colorscheme
   solarized-osaka`.
 The theme offers four styles: |solarized-osaka.nvim-storm|, |solarized-osaka.nvim-moon|,
-|solarized-osaka.nvim-night|, and |solarized-osaka.nvim-day|.
+|solarized-osaka.nvim-night|, and |solarized-osaka.nvim-light|.
 
-The |solarized-osaka.nvim-day| style is used when `{ style = "light" }` is passed to
+The |solarized-osaka.nvim-light| style is used when `{ style = "light" }` is passed to
 `setup(options)` or when `vim.o.background = "light"`.
 
 TokyoNight <https://github.com/craftzdog/solarized-osaka.nvim> uses the default options,
@@ -175,8 +175,8 @@ unless `setup` is explicitly called.
     require("solarized-osaka").setup({
       -- your configuration comes here
       -- or leave it empty to use the default settings
-      style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-      light_style = "day", -- The theme is used when the background is set to light
+      style = "", -- The default dark style. Set to `vivid` for a higher-contrast variant that stays readable in bright environments
+      light_style = "light", -- The theme is used when the background is set to light
       transparent = false, -- Enable this to disable setting the background color
       terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
       styles = {
@@ -222,7 +222,7 @@ groups.
 
 For default values of `colors` and `highlights`, please consult the storm
 <extras/lua/solarized-osaka_storm.lua>, moon <extras/lua/solarized-osaka_moon.lua>, night
-<extras/lua/solarized-osaka_night.lua>, and day <extras/lua/solarized-osaka_day.lua>
+<extras/lua/solarized-osaka_night.lua>, and light <extras/lua/solarized_osaka_light.lua>
 themes.
 
 

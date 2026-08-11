@@ -182,6 +182,40 @@ M.light = {
   fg = M.default.base01,
 }
 
+local background_tokens = {
+  none = true,
+  bg = true,
+  bg_highlight = true,
+  base02 = true,
+  base03 = true,
+  base04 = true,
+}
+
+local background_tiers = {
+  ["700"] = true,
+  ["900"] = true,
+  ["950"] = true,
+}
+
+---@param name string
+---@return boolean
+local function is_background_token(name)
+  return background_tokens[name] or background_tiers[name:sub(-3)] or false
+end
+
+--- A higher-contrast dark variant for bright environments
+---@return Palette
+M.vivid = function()
+  local amount = require("solarized-osaka.config").options.vivid_brightness
+  local palette = {}
+  for name, hex in pairs(M.default) do
+    if not is_background_token(name) then
+      palette[name] = util.brighten(hex, amount)
+    end
+  end
+  return palette
+end
+
 ---@return ColorScheme
 function M.setup(opts)
   opts = opts or {}
