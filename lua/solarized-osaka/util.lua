@@ -36,6 +36,20 @@ function M.lighten(hex, amount, fg)
   return M.blend(hex, fg or M.fg, amount)
 end
 
+--- Raises a color's perceptual lightness toward white, leaving hue and saturation untouched
+---@param hex string
+---@param amount number between 0 and 1, from unchanged to white
+---@return string
+function M.brighten(hex, amount)
+  if hex == "NONE" then
+    return hex
+  end
+  local hsluv = require("solarized-osaka.hsluv")
+  local color = hsluv.hex_to_hsluv(hex)
+  color[3] = color[3] + (100 - color[3]) * amount
+  return hsluv.hsluv_to_hex(color)
+end
+
 function M.invert_color(color)
   local hsluv = require("solarized-osaka.hsluv")
   if color ~= "NONE" then

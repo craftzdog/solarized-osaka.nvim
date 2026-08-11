@@ -4,7 +4,7 @@ local M = {}
 ---@field on_colors fun(colors: ColorScheme)
 ---@field on_highlights fun(highlights: Highlights, colors: ColorScheme)
 local defaults = {
-  style = "", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
+  style = "", -- The default dark style. Set to `vivid` for a higher-contrast variant that stays readable in bright environments
   light_style = "light", -- The theme is used when the background is set to light
   transparent = true, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
@@ -21,6 +21,7 @@ local defaults = {
   },
   sidebars = { "qf", "help" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
   day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+  vivid_brightness = 0.3, -- Adjusts how far the **Vivid** style brightens text colors. Number between 0 and 1, from the default palette to white
   hide_inactive_statusline = false, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
   dim_inactive = false, -- dims inactive windows
   lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
