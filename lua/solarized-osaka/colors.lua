@@ -232,7 +232,6 @@ function M.setup(opts)
   local colors = vim.tbl_deep_extend("force", vim.deepcopy(M.default), palette)
 
   util.bg = colors.bg
-  util.day_brightness = config.options.day_brightness
 
   colors.black = util.darken(colors.bg, 0.8, "#000000")
   colors.border = colors.black

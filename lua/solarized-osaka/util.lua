@@ -1,10 +1,6 @@
-local ts = require("solarized-osaka.treesitter")
-
 local M = {}
 
 M.bg = "#000000"
-M.fg = "#ffffff"
-M.day_brightness = 0.3
 
 ---@param c  string
 local function hexToRgb(c)
@@ -30,10 +26,6 @@ end
 
 function M.darken(hex, amount, bg)
   return M.blend(hex, bg or M.bg, amount)
-end
-
-function M.lighten(hex, amount, fg)
-  return M.blend(hex, fg or M.fg, amount)
 end
 
 --- Raises a color's perceptual lightness without draining its colorfulness.
@@ -65,39 +57,6 @@ function M.brighten(hex, amount)
   return hsluv.rgb_to_hex(rgb)
 end
 
-function M.invert_color(color)
-  local hsluv = require("solarized-osaka.hsluv")
-  if color ~= "NONE" then
-    local hsl = hsluv.hex_to_hsluv(color)
-    hsl[3] = 100 - hsl[3]
-    if hsl[3] < 40 then
-      hsl[3] = hsl[3] + (100 - hsl[3]) * M.day_brightness
-    end
-    return hsluv.hsluv_to_hex(hsl)
-  end
-  return color
-end
-
----@param group string
-function M.highlight(group, hl)
-  group = ts.get(group)
-  if not group then
-    return
-  end
-  if hl.style then
-    if type(hl.style) == "table" then
-      hl = vim.tbl_extend("force", hl, hl.style)
-    elseif hl.style:lower() ~= "none" then
-      -- handle old string style definitions
-      for s in string.gmatch(hl.style, "([^,]+)") do
-        hl[s] = true
-      end
-    end
-    hl.style = nil
-  end
-  vim.api.nvim_set_hl(0, group, hl)
-end
-
 -- Simple string interpolation.
 --
 -- Example template: "${name} is ${value}"
@@ -110,39 +69,6 @@ function M.template(str, table)
       return vim.tbl_get(table, unpack(vim.split(w:sub(3, -2), ".", { plain = true }))) or w
     end)
   )
-end
-
-function M.syntax(syntax)
-  for group, colors in pairs(syntax) do
-    M.highlight(group, colors)
-  end
-end
-
----@param colors ColorScheme
-function M.invert_colors(colors)
-  if type(colors) == "string" then
-    ---@diagnostic disable-next-line: return-type-mismatch
-    return M.invert_color(colors)
-  end
-  for key, value in pairs(colors) do
-    colors[key] = M.invert_colors(value)
-  end
-  return colors
-end
-
----@param hls Highlights
-function M.invert_highlights(hls)
-  for _, hl in pairs(hls) do
-    if hl.fg then
-      hl.fg = M.invert_color(hl.fg)
-    end
-    if hl.bg then
-      hl.bg = M.invert_color(hl.bg)
-    end
-    if hl.sp then
-      hl.sp = M.invert_color(hl.sp)
-    end
-  end
 end
 
 local me = debug.getinfo(1, "S").source:sub(2)
