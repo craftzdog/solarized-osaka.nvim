@@ -15,7 +15,7 @@ cursor_fg = "${bg}"
 selection_bg = "${blue700}"
 selection_fg = "${fg}"
 
-ansi = ["${black}", "${red}", "${green}", "${yellow}", "${blue}", "${magenta}", "${cyan}", "${base0}"]
+ansi = ["${base04}", "${red}", "${green}", "${yellow}", "${blue}", "${magenta}", "${cyan}", "${base0}"]
 brights = ["${bg}", "${red}", "${green}", "${yellow}", "${blue}", "${magenta}", "${cyan}", "${fg}"]
 
 [colors.tab_bar]

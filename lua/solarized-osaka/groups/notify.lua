@@ -1,5 +1,3 @@
-local Util = require("solarized-osaka.util")
-
 local M = {}
 
 function M.get(c, opts)
@@ -7,11 +5,11 @@ function M.get(c, opts)
   return {
     NotifyBackground  = { fg = c.fg, bg = c.bg },
     --- Border
-    NotifyERRORBorder = { fg = Util.darken(c.error, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyWARNBorder  = { fg = Util.darken(c.warning, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyINFOBorder  = { fg = Util.darken(c.info, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyDEBUGBorder = { fg = Util.darken(c.base01, 0.3), bg = opts.transparent and c.none or c.bg },
-    NotifyTRACEBorder = { fg = Util.darken(c.violet500, 0.3), bg = opts.transparent and c.none or c.bg },
+    NotifyERRORBorder = { fg = c.red900, bg = opts.transparent and c.none or c.bg },
+    NotifyWARNBorder  = { fg = c.yellow900, bg = opts.transparent and c.none or c.bg },
+    NotifyINFOBorder  = { fg = c.blue900, bg = opts.transparent and c.none or c.bg },
+    NotifyDEBUGBorder = { fg = c.base02, bg = opts.transparent and c.none or c.bg },
+    NotifyTRACEBorder = { fg = c.violet900, bg = opts.transparent and c.none or c.bg },
     --- Icons
     NotifyERRORIcon   = { fg = c.error },
     NotifyWARNIcon    = { fg = c.warning },

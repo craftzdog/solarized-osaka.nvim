@@ -1,5 +1,3 @@
-local Util = require("solarized-osaka.util")
-
 local M = {}
 
 function M.get(c, opts)
@@ -32,17 +30,17 @@ function M.get(c, opts)
     BufferVisibleMod      = { bg = c.bg_statusline, fg = c.warning },
     BufferVisibleSign     = { bg = c.bg_statusline, fg = c.info },
     BufferVisibleTarget   = { bg = c.bg_statusline, fg = c.red },
-    BufferInactive        = { bg = Util.darken(c.bg_highlight, 0.4), fg = Util.darken(c.violet500, 0.8) },
-    BufferInactiveERROR   = { bg = Util.darken(c.bg_highlight, 0.4), fg = Util.darken(c.error, 0.8) },
-    BufferInactiveHINT    = { bg = Util.darken(c.bg_highlight, 0.4), fg = Util.darken(c.hint, 0.8) },
-    BufferInactiveINFO    = { bg = Util.darken(c.bg_highlight, 0.4), fg = Util.darken(c.info, 0.8) },
-    BufferInactiveWARN    = { bg = Util.darken(c.bg_highlight, 0.4), fg = Util.darken(c.warning, 0.8) },
-    BufferInactiveIndex   = { bg = Util.darken(c.bg_highlight, 0.4), fg = c.violet500 },
-    BufferInactiveMod     = { bg = Util.darken(c.bg_highlight, 0.4), fg = Util.darken(c.warning, 0.8) },
-    BufferInactiveSign    = { bg = Util.darken(c.bg_highlight, 0.4), fg = c.bg },
-    BufferInactiveTarget  = { bg = Util.darken(c.bg_highlight, 0.4), fg = c.red },
+    BufferInactive        = { bg = c.bg, fg = c.violet600 },
+    BufferInactiveERROR   = { bg = c.bg, fg = c.red600 },
+    BufferInactiveHINT    = { bg = c.bg, fg = c.cyan600 },
+    BufferInactiveINFO    = { bg = c.bg, fg = c.blue600 },
+    BufferInactiveWARN    = { bg = c.bg, fg = c.yellow600 },
+    BufferInactiveIndex   = { bg = c.bg, fg = c.violet500 },
+    BufferInactiveMod     = { bg = c.bg, fg = c.yellow600 },
+    BufferInactiveSign    = { bg = c.bg, fg = c.bg },
+    BufferInactiveTarget  = { bg = c.bg, fg = c.red },
     BufferOffset          = { bg = c.bg_statusline, fg = c.violet500 },
-    BufferTabpageFill     = { bg = Util.darken(c.bg_highlight, 0.8), fg = c.violet500 },
+    BufferTabpageFill     = { bg = c.bg_highlight, fg = c.violet500 },
     BufferTabpages        = { bg = c.bg_statusline, fg = c.none },
   }
 end

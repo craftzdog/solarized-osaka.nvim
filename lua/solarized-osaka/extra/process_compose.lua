@@ -31,15 +31,15 @@ style:
     categoryFgColor: '${blue700}'
   dialog:
     fgColor: '${blue300}'
-    bgColor: '${black}'
+    bgColor: '${base04}'
     contrastBgColor: '${bg}'
     attentionBgColor: '${red300}'
-    buttonFgColor: '${black}'
+    buttonFgColor: '${base04}'
     buttonBgColor: '${bg_highlight}'
-    buttonFocusFgColor: '${black}'
+    buttonFocusFgColor: '${base04}'
     buttonFocusBgColor: '${blue}'
     labelFgColor: '${yellow}'
-    fieldFgColor: '${black}'
+    fieldFgColor: '${base04}'
     fieldBgColor: '${blue700}'
 ]=],
     colors

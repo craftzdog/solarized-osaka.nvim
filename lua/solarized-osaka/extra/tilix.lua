@@ -13,7 +13,7 @@ function M.generate(colors)
     "foreground-color": "${fg}",
     "background-color": "${bg}",
     "palette": [
-        "${black}",
+        "${base04}",
         "${red}",
         "${green}",
         "${yellow}",

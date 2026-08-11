@@ -11,7 +11,7 @@ function M.generate(colors)
 *background: ${bg}
 *foreground: ${fg}
 
-*color0: ${black}
+*color0: ${base04}
 *color1: ${red}
 *color2: ${green}
 *color3: ${yellow}

@@ -43,13 +43,13 @@ border_symbol = "│"
 border_style  = { fg = "${border_highlight}" }
 
 [mode]
-normal_main = { fg = "${black}", bg = "${blue}", bold = true }
+normal_main = { fg = "${base04}", bg = "${blue}", bold = true }
 normal_alt  = { fg = "${blue}", bg = "${base01}" }
 
-select_main = { fg = "${black}", bg = "${magenta}", bold = true }
+select_main = { fg = "${base04}", bg = "${magenta}", bold = true }
 select_alt  = { fg = "${magenta}", bg = "${base01}" }
 
-unset_main  = { fg = "${black}", bg = "${violet500}", bold = true }
+unset_main  = { fg = "${base04}", bg = "${violet500}", bold = true }
 unset_alt   = { fg = "${violet500}", bg = "${base01}" }
 
 [status]

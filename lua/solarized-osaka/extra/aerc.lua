@@ -19,7 +19,7 @@ function M.generate(colors)
 border.fg=${base01}
 border.bg=${bg}
 
-title.fg=${black}
+title.fg=${base04}
 title.bg=${blue}
 title.bold=true
 
@@ -29,7 +29,7 @@ header.bold=true
 
 tab.fg=${base01}
 tab.bg=${bg_statusline}
-tab.selected.fg=${black}
+tab.selected.fg=${base04}
 tab.selected.bg=${blue}
 
 statusline_default.fg=${fg}

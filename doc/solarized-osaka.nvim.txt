@@ -310,10 +310,9 @@ You can easily use the color palette for other plugins inside your Neovim
 
 >lua
     local colors = require("solarized-osaka.colors").setup() -- pass in any of the config options as explained above
-    local util = require("solarized-osaka.util")
-    
+
     aplugin.background = colors.bg
-    aplugin.my_error = util.darken(colors.red500, 0.3) -- number between 0 and 1. 0 results in the background color, 1 results in red500
+    aplugin.my_error = colors.red500 -- every hue carries a 50-950 ramp, so use red600 for a dimmer variant or red900 for a background tint
 <
 
 

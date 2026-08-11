@@ -175,7 +175,7 @@ function M.generate(colors)
   --spoiler-revealed-background: ${bg_highlight};
   --spoiler-hidden-background: ${base01};
   --android-navigation-bar-background: ${bg_highlight};
-  --android-ripple: ${black}4C;
+  --android-ripple: ${base04}4C;
   --bg-mod-faint: ${base03};
   --bg-mod-subtle: ${bg};
   --focus-primary: ${blue};

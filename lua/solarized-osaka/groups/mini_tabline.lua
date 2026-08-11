@@ -4,7 +4,7 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     MiniTablineCurrent         = { fg = c.fg, bg = c.base02, bold = true },
-    MiniTablineFill            = { bg = c.black },
+    MiniTablineFill            = { bg = c.base04 },
     MiniTablineHidden          = { fg = c.violet500, bg = c.bg_statusline },
     MiniTablineModifiedCurrent = { fg = c.base02, bg = c.fg, bold = true },
     MiniTablineModifiedHidden  = { fg = c.bg_statusline, bg = c.violet500 },

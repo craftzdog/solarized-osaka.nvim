@@ -296,10 +296,8 @@ function M.setup(opts)
   ---@class ColorScheme: Palette
   local colors = vim.tbl_deep_extend("force", vim.deepcopy(M.default), palette)
 
-  util.bg = colors.bg
-
-  colors.black = util.darken(colors.bg, 0.8, "#000000")
-  colors.border = colors.black
+  -- Separator lines, matching WinSeparator
+  colors.border = colors.base02
 
   -- Popups and statusline always get a dark background
   colors.bg_popup = colors.base04

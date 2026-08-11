@@ -14,7 +14,7 @@ ColorForeground=${fg}
 ColorSelectionBackground=${blue700}
 ColorSelection=${fg}
 
-ColorPalette=${black};${red};${green};${yellow};${blue};${magenta};${cyan};${base0};${bg};${red};${green};${yellow};${blue};${magenta};${cyan};${fg}
+ColorPalette=${base04};${red};${green};${yellow};${blue};${magenta};${cyan};${base0};${bg};${red};${green};${yellow};${blue};${magenta};${cyan};${fg}
 ]],
     colors
   )

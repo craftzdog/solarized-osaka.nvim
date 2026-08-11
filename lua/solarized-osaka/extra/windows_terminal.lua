@@ -10,7 +10,7 @@ function M.generate(colors)
 # https://learn.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes#creating-your-own-color-scheme
 {
     "background": "${bg}",
-    "black": "${black}",
+    "black": "${base04}",
     "blue": "${blue}",
     "brightBlack": "${bg}",
     "brightBlue": "${blue}",

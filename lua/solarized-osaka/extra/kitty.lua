@@ -27,14 +27,14 @@ active_tab_background ${cyan}
 active_tab_foreground ${base4}
 inactive_tab_background ${bg_highlight}
 inactive_tab_foreground ${base00}
-#tab_bar_background ${black}
+#tab_bar_background ${base04}
 
 # Windows
 active_border_color ${blue}
 inactive_border_color ${bg_highlight}
 
 # normal
-color0 ${black}
+color0 ${base04}
 color1 ${red}
 color2 ${green}
 color3 ${yellow}

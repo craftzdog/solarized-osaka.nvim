@@ -4,29 +4,29 @@ local config = require("solarized-osaka.config").options
 local solarized_osaka = {}
 
 solarized_osaka.normal = {
-  a = { bg = colors.blue, fg = colors.black },
+  a = { bg = colors.blue, fg = colors.base04 },
   b = { bg = colors.base0, fg = colors.base04 },
   c = { bg = colors.bg_statusline, fg = colors.fg },
 }
 
 solarized_osaka.insert = {
-  a = { bg = colors.green, fg = colors.black },
+  a = { bg = colors.green, fg = colors.base04 },
 }
 
 solarized_osaka.command = {
-  a = { bg = colors.yellow, fg = colors.black },
+  a = { bg = colors.yellow, fg = colors.base04 },
 }
 
 solarized_osaka.visual = {
-  a = { bg = colors.magenta, fg = colors.black },
+  a = { bg = colors.magenta, fg = colors.base04 },
 }
 
 solarized_osaka.replace = {
-  a = { bg = colors.red, fg = colors.black },
+  a = { bg = colors.red, fg = colors.base04 },
 }
 
 solarized_osaka.terminal = {
-  a = { bg = colors.green, fg = colors.black },
+  a = { bg = colors.green, fg = colors.base04 },
 }
 
 solarized_osaka.inactive = {

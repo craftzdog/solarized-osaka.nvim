@@ -23,7 +23,7 @@ selection-foreground=${fg}
 selection-background=${blue700}
 urls=${green500}
 
-regular0=${black}
+regular0=${base04}
 regular1=${red}
 regular2=${green}
 regular3=${yellow}

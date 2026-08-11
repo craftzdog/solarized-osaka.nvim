@@ -33,13 +33,13 @@ border_symbol = "│"
 border_style  = { fg = "#ede7d3" }
 
 [mode]
-normal_main = { fg = "#cac4b5", bg = "#268bd3", bold = true }
+normal_main = { fg = "#ffffff", bg = "#268bd3", bold = true }
 normal_alt  = { fg = "#268bd3", bg = "#adb7b7" }
 
-select_main = { fg = "#cac4b5", bg = "#d23681", bold = true }
+select_main = { fg = "#ffffff", bg = "#d23681", bold = true }
 select_alt  = { fg = "#d23681", bg = "#adb7b7" }
 
-unset_main  = { fg = "#cac4b5", bg = "#6d71c4", bold = true }
+unset_main  = { fg = "#ffffff", bg = "#6d71c4", bold = true }
 unset_alt   = { fg = "#6d71c4", bg = "#adb7b7" }
 
 [status]

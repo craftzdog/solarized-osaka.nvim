@@ -2,7 +2,7 @@
 # https://learn.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes#creating-your-own-color-scheme
 {
     "background": "#fdf5e2",
-    "black": "#cac4b5",
+    "black": "#ffffff",
     "blue": "#268bd3",
     "brightBlack": "#fdf5e2",
     "brightBlue": "#268bd3",
