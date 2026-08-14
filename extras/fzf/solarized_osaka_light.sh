@@ -3,7 +3,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --info=inline-right \
   --ansi \
   --layout=reverse \
-  --border=none
+  --border=none \
   --color=bg+:#87ddff \
   --color=bg:#d9f5ff \
   --color=border:#41d7fc \
