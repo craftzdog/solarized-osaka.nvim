@@ -1,10 +1,10 @@
 local M = {}
 
---- @param colors ColorScheme
-function M.generate(colors)
-  --TODO: figure this out
-  -- It works inside the session if opts.transparent = false
-  -- some of these highlights are not initialized untill after the colorscheme is loaded
+function M.generate()
+  -- The FZF palette is derived from resolved highlight groups, so the configured
+  -- style must be loaded before querying them (including in headless builds).
+  require("solarized-osaka.theme").setup()
+
   local links = {
     FzfLuaFzfCursorLine = "CursorLine",
     FzfLuaFzfMatch = "Special",
@@ -47,7 +47,6 @@ function M.generate(colors)
     if vim.fn.hlexists(v[2]) == 1 then
       hl_group = v[2]
     end
-    print("Processing: " .. c .. " with hl_group: " .. hl_group)
     assert(hl_group, "hl_group not found for " .. v[2])
     local hl = vim.api.nvim_get_hl(0, { name = hl_group, link = false })
     assert(hl, "hl not found for " .. hl_group)
@@ -71,11 +70,9 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --info=inline-right \
   --ansi \
   --layout=reverse \
-  --border=none
+  --border=none \
 %s
 "
 ]]
-
-print(M.generate())
 
 return M
