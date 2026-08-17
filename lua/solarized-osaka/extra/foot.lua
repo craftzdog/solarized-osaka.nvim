@@ -13,15 +13,13 @@ function M.generate(colors)
 
   local foot = util.template(
     [[
-[cursor]
-color=${fg} ${blue700}
-
-[colors]
+[colors-${_style}]
 foreground=${fg}
 background=${bg}
 selection-foreground=${fg}
 selection-background=${blue700}
 urls=${green500}
+cursor=${fg} ${blue700}
 
 regular0=${base04}
 regular1=${red}

@@ -114,6 +114,7 @@ function M.setup()
       local fname = extra .. "/solarized_osaka_" .. style .. ext
       colors["_upstream_url"] = "https://github.com/craftzdog/solarized-osaka.nvim/raw/main/extras/" .. fname
       colors["_style_name"] = "Solarized Osaka" .. style_name
+      colors["_style"] = style
       write(plugin.generate(colors), fname)
     end
   end
