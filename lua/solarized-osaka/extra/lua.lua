@@ -16,6 +16,7 @@ function M.generate(colors)
   colors = vim.deepcopy(colors)
   colors._upstream_url = nil
   colors._style_name = nil
+  colors._style = nil
 
   local ret = "local colors = "
     .. vim.inspect(colors)
