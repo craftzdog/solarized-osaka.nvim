@@ -7,7 +7,7 @@ function M.get(c, opts)
     MiniDiffOverChange  = "DiffText",
     MiniDiffOverContext = "DiffChange",
     MiniDiffOverDelete  = "DiffDelete",
-    MiniDiffSignAdd     = { fg = c.green500 },
+    MiniDiffSignAdd     = { fg = c.cyan500 },
     MiniDiffSignChange  = { fg = c.yellow500 },
     MiniDiffSignDelete  = { fg = c.red500 },
   }
