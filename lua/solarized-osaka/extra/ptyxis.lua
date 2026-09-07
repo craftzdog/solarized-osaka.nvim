@@ -4,18 +4,18 @@ local M = {}
 
 --- @param colors ColorScheme
 function M.generate(colors)
-    local ptyxisColors = {}
-    for k, v in pairs(colors) do
-        if type(v) == "string" then
-            ptyxisColors[k] = v
-        end
-        if k == "_style" then
-            ptyxisColors[k] = v:gsub("^%l", string.upper)
-        end
+  local ptyxisColors = {}
+  for k, v in pairs(colors) do
+    if type(v) == "string" then
+      ptyxisColors[k] = v
     end
+    if k == "_style" then
+      ptyxisColors[k] = v:gsub("^%l", string.upper)
+    end
+  end
 
-    local ptyxis = util.template(
-        [[
+  local ptyxis = util.template(
+    [[
 [Palette]
 Name=Solarized Osaka
 
@@ -38,10 +38,10 @@ Color12=${blue}
 Color13=${magenta}
 Color14=${cyan}
 Color15=${fg}]],
-        ptyxisColors
-    )
+    ptyxisColors
+  )
 
-    return ptyxis
+  return ptyxis
 end
 
 return M
